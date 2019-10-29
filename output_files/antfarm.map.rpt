@@ -1,5 +1,5 @@
 Analysis & Synthesis report for antfarm
-Tue Oct 29 12:34:20 2019
+Tue Oct 29 18:37:44 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Oct 29 12:34:20 2019               ;
+; Analysis & Synthesis Status        ; Failed - Tue Oct 29 18:37:44 2019               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; antfarm                                         ;
 ; Top-level Entity Name              ; antfarm                                         ;
@@ -156,13 +156,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Oct 29 12:34:19 2019
+    Info: Processing started: Tue Oct 29 18:37:43 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off antfarm -c antfarm
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Warning (10463): Verilog HDL Declaration warning at block.v(6): "type" is SystemVerilog-2005 keyword
-Error (10170): Verilog HDL syntax error at block.v(37) near text "end";  expecting ";" File: C:/altera/13.0sp1/quartus/projects/antfarm/block.v Line: 37
-Error (10112): Ignored design unit "block" at block.v(1) due to previous errors File: C:/altera/13.0sp1/quartus/projects/antfarm/block.v Line: 1
-Info (12021): Found 0 design units, including 0 entities, in source file block.v
+Info (12021): Found 1 design units, including 1 entities, in source file block.v
+    Info (12023): Found entity 1: block
 Info (12021): Found 1 design units, including 1 entities, in source file antfarm.bdf
     Info (12023): Found entity 1: antfarm
 Warning (12019): Can't analyze file -- file MovePopRegistere.v is missing
@@ -173,10 +172,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file threebi
     Info (12023): Found entity 1: ThreeBitPopRegisterNode
 Info (12021): Found 1 design units, including 1 entities, in source file threebitby3popregister.bdf
     Info (12023): Found entity 1: threeBitby3popregister
+Info (12021): Found 1 design units, including 1 entities, in source file display.v
+    Info (12023): Found entity 1: display
+Warning (10229): Verilog HDL Expression warning at testController.v(13): truncated literal to match 4 bits
+Info (12021): Found 1 design units, including 1 entities, in source file testcontroller.v
+    Info (12023): Found entity 1: testController
+Error (10137): Verilog HDL Procedural Assignment error at MovePopRegister.v(20): object "Left" on left-hand side of assignment must have a variable data type File: C:/altera/13.0sp1/quartus/projects/antfarm/MovePopRegister.v Line: 20
 Info (144001): Generated suppressed messages file C:/altera/13.0sp1/quartus/projects/antfarm/output_files/antfarm.map.smsg
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 2 errors, 4 warnings
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 1 error, 5 warnings
     Error: Peak virtual memory: 4582 megabytes
-    Error: Processing ended: Tue Oct 29 12:34:20 2019
+    Error: Processing ended: Tue Oct 29 18:37:44 2019
     Error: Elapsed time: 00:00:01
     Error: Total CPU time (on all processors): 00:00:01
 

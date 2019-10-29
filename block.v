@@ -1,4 +1,4 @@
-module block(command,North,South,East,West);
+module block(previousMoves,command,North,South,East,West);
 parameter E = 4'b00, 
 			 G = 4'b01,
 			 T = 4'b10,
@@ -32,8 +32,10 @@ else
 	5'd8:contains=2'd3;//sugar, ant
 	default: //game rules here
 	begin	
-	if((North!=4'd1)&&contains==2'd1)
+		//if((North!=4'd1)&&contains==2'd1)
 		//check surroundings ,send and receive
+			type=type;
+		//end
 	end
 	endcase
 end

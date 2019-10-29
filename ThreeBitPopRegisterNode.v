@@ -1,9 +1,10 @@
-module ThreeBitPopRegisterNode(left,right,push, pop);
+module ThreeBitPopRegisterNode(left,right, down, push, pop);
 
 input pop;
 input push;
 inout reg[2:0]left;
 inout reg[2:0]right;
+inout reg[2:0]down;//for moving all data to parralel ThreeBitpopRegisterNode
 reg [2:0]store;
 
 
@@ -25,6 +26,11 @@ begin
 			begin
 				left<=store;
 				store<=right;
+			end
+		2'b11:
+			begin
+				down<=store;
+				store<=down;
 			end
 		default: store<=store;
 	endcase
