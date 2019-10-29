@@ -1,0 +1,35 @@
+|antfarm
+
+
+|antfarm|block:inst
+command[0] => ~NO_FANOUT~
+command[1] => ~NO_FANOUT~
+command[2] => ~NO_FANOUT~
+command[3] => ~NO_FANOUT~
+command[4] => ~NO_FANOUT~
+North[0] <> <UNC>
+North[1] <> <UNC>
+North[2] <> <UNC>
+North[3] <> <UNC>
+North[4] <> <UNC>
+North[5] <> <UNC>
+South[0] <> <UNC>
+South[1] <> <UNC>
+South[2] <> <UNC>
+South[3] <> <UNC>
+South[4] <> <UNC>
+South[5] <> <UNC>
+East[0] <> <UNC>
+East[1] <> <UNC>
+East[2] <> <UNC>
+East[3] <> <UNC>
+East[4] <> <UNC>
+East[5] <> <UNC>
+West[0] <> <UNC>
+West[1] <> <UNC>
+West[2] <> <UNC>
+West[3] <> <UNC>
+West[4] <> <UNC>
+West[5] <> <UNC>
+
+

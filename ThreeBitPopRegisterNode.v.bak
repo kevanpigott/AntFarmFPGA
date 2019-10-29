@@ -1,0 +1,31 @@
+module ThreeBitPopRegisterNode(in,out,pop);
+
+
+input pop;
+
+
+input [2:0]in;
+
+
+wire [2:0]store;
+
+
+output reg [2:0] out;
+
+intial begin
+	store<=3'b0;
+end
+
+always@(*)
+begin
+	case({pop})
+	1'b0:store=store;
+	1'b1:
+		begin
+			out<=store;
+			store<=in;
+		end
+	endcase
+end
+
+endmodule

@@ -1,0 +1,21 @@
+module block(command,type,contains)
+parameter E = 4'b00, 
+			 G = 4'b01,
+			 T = 4'b10,
+			 Q = 2'b11;
+output reg [1:0]type, [1:0]contains;
+input [3:0]command;
+always@(*)
+case({command})
+4'd0:type=type;
+4'd1:type=E;//empty
+4'd2:type=G;//ground
+4'd3:type=T;//tunnel
+4'd4:type=Q;//queen
+4'd5:contains=2'd0;//no sugar, no ant
+4'd6:contains=2'd1;//no sugar, ant
+4'd7:contains=2'd2;//sugar, no ant
+4'd8:contains=2'd3;//sugar, ant
+
+endcase
+endmodule

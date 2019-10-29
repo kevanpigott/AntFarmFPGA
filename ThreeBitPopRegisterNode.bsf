@@ -1,0 +1,57 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 256 176)
+	(text "ThreeBitPopRegisterNode" (rect 5 0 131 12)(font "Arial" ))
+	(text "inst" (rect 8 64 25 76)(font "Arial" ))
+	(port
+		(pt 72 0)
+		(input)
+		(text "push" (rect 0 0 23 12)(font "Arial" ))
+		(text "push" (rect 64 25 76 48)(font "Arial" )(vertical))
+		(line (pt 72 0)(pt 72 17))
+	)
+	(port
+		(pt 112 0)
+		(input)
+		(text "pop" (rect 0 0 17 12)(font "Arial" ))
+		(text "pop" (rect 104 25 116 42)(font "Arial" )(vertical))
+		(line (pt 112 0)(pt 112 17))
+	)
+	(port
+		(pt 0 56)
+		(bidir)
+		(text "left[2..0]" (rect 32 0 74 12)(font "Arial" ))
+		(text "left[2..0]" (rect 24 48 66 60)(font "Arial" ))
+		(line (pt 16 56)(pt 0 56)(line_width 3))
+	)
+	(port
+		(pt 192 56)
+		(bidir)
+		(text "right[2..0]" (rect 32 0 79 12)(font "Arial" ))
+		(text "right[2..0]" (rect 135 51 182 63)(font "Arial" ))
+		(line (pt 192 56)(pt 176 56)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 176 96))
+	)
+)
