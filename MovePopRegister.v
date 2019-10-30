@@ -1,8 +1,10 @@
-module MovePopRegister(Left,Right,Push,Pop);
+module MovePopRegister(LeftIn,LeftOut,RightIn,RightOut,Push,Pop);
 input Push;
 input Pop;
-inout [2:0]Left;
-inout [2:0]Right;
+input [2:0]LeftIn;
+input [2:0]RightIn;
+output reg [2:0]LeftOut;
+output reg [2:0]RightOut;
 parameter W=3;//node width
 parameter S=32;//number of nodes
 parameter L=S*W;//overall length of array
@@ -17,7 +19,7 @@ case({Push,Pop})
 	2'd0:	store=store;//push=0, pop=0;
 	2'd1:	//push=0 pop=1 
 		begin
-			Left<=store[W:0];
+			LeftOut<=store[W:0];
 			tempStore<=store[L:W];
 			store[L-W:0]<=tempStore;
 			store[L:L-W]<=8'd0;
@@ -25,7 +27,7 @@ case({Push,Pop})
 	2'd2:	//push=1 pop=0;
 		begin
 			tempStore<=store[L-W:0];
-			store[W:0]<=Left;
+			store[W:0]<=LeftIn;
 			store[L:W]<=tempStore;
 		end
 	2'd3://push=1 pop =1; Transfer all

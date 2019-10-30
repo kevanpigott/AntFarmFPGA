@@ -33,15 +33,18 @@ out[7] <= <GND>
 
 
 |antfarm|testController:inst12
-left[0] <> left[0]
-left[1] <> left[1]
-left[2] <> left[2]
+leftIn[0] => Mux0.IN2
+leftIn[1] => Mux1.IN2
+leftIn[2] => Mux2.IN2
+leftOut[0] <= leftOut[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+leftOut[1] <= leftOut[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+leftOut[2] <= leftOut[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
 Inputs[0] => Mux0.IN3
-Inputs[0] => left[0]$latch.DATAIN
+Inputs[0] => leftOut[0]$latch.DATAIN
 Inputs[1] => Mux1.IN3
-Inputs[1] => left[1]$latch.DATAIN
+Inputs[1] => leftOut[1]$latch.DATAIN
 Inputs[2] => Mux2.IN3
-Inputs[2] => left[2]$latch.DATAIN
+Inputs[2] => leftOut[2]$latch.DATAIN
 RW[0] => Decoder0.IN1
 RW[0] => Mux0.IN5
 RW[0] => Mux1.IN5
@@ -59,12 +62,18 @@ out[3] <= <GND>
 
 
 |antfarm|MovePopRegister:inst2
-Left[0] <> Left[0]
-Left[1] <> Left[1]
-Left[2] <> Left[2]
-Right[0] <> <UNC>
-Right[1] <> <UNC>
-Right[2] <> <UNC>
+LeftIn[0] => Mux94.IN4
+LeftIn[1] => Mux95.IN4
+LeftIn[2] => Mux96.IN4
+LeftOut[0] <= LeftOut[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+LeftOut[1] <= LeftOut[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+LeftOut[2] <= LeftOut[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+RightIn[0] => ~NO_FANOUT~
+RightIn[1] => ~NO_FANOUT~
+RightIn[2] => ~NO_FANOUT~
+RightOut[0] <= <GND>
+RightOut[1] <= <GND>
+RightOut[2] <= <GND>
 Push => Decoder0.IN0
 Push => Mux0.IN2
 Push => Mux1.IN4
@@ -160,9 +169,9 @@ Push => Mux90.IN2
 Push => Mux91.IN2
 Push => Mux92.IN2
 Push => Mux93.IN2
-Push => Mux94.IN3
-Push => Mux95.IN3
-Push => Mux96.IN3
+Push => Mux94.IN2
+Push => Mux95.IN2
+Push => Mux96.IN2
 Push => Mux97.IN2
 Push => Mux98.IN2
 Push => Mux99.IN2
@@ -351,9 +360,9 @@ Pop => Mux90.IN3
 Pop => Mux91.IN3
 Pop => Mux92.IN3
 Pop => Mux93.IN3
-Pop => Mux94.IN4
-Pop => Mux95.IN4
-Pop => Mux96.IN4
+Pop => Mux94.IN3
+Pop => Mux95.IN3
+Pop => Mux96.IN3
 Pop => Mux97.IN3
 Pop => Mux98.IN3
 Pop => Mux99.IN3
