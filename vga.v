@@ -13,6 +13,23 @@ module vga(
        reg yLowDirt ;
        reg yHighDirt ;
 
+	
+	//parameter Xwidth=100;
+	//parameter i=1;
+	//parameter Ywidth=100;
+	//parameter j=1;
+	
+	//blockswidth=pixelwidthofscreen/numberofblockswidth  where number of blocks width is the number of blocks horizontally
+	
+	//for(i<numberofblocksswidth){//
+	//	for(j<numberofpblocksheight){
+	//		placeblock(x>((i-1)*Xwidth)	& (x<i*xwidth) //same thing for y)
+	//		j++;
+	//	}
+	//	i++;
+	//}
+	
+	
     wire rst = ~RST_BTN;    // reset is active low on Arty & Nexys Video
     // wire rst = RST_BTN;  // reset is active high on Basys3 (BTNC)
 
