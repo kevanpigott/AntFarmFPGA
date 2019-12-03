@@ -1,0 +1,49 @@
+module blockv2(clk,en,set,SetIn,Nin, Sin, Ein, Win, Nout, Sout, Eout, Wout, dispOut)
+parameter inL=7;
+parameter outL=7;
+
+input clk;
+input en;
+input set;//used in initializing game matrix
+input [inL:0]SetIn;
+input [inL:0]Nin;
+input [inL:0]Sin;
+input [inL:0]Ein;
+input [inL:0]Win;
+
+output reg [2:0]dispOut;
+output reg [outL:0]Nout;
+output reg [outL:0]Sout;
+output reg [outL:0]Eout;
+output reg [outL:0]Wout;
+
+parameter empty=3'd0, dirt=3'd1, air=3'd2, ground=3d'3, tunnel=3'd4, wall=3d'5, queen=3'd6, error=3'd7;
+
+reg ant;
+reg sugar;
+reg [2:0] blocktype;
+
+initial begin
+	ant=1'b0;
+	sugar=1'b0;
+	blocktype=error;
+end
+always@(*)begin
+	if(blocktype==queen) begin
+		dispOut=queen;
+	end else if(ant==1'b1) begin
+		dispOut=3'b101;
+	end else if(sugar==1'b1) begin
+		dispOut=3'b111;
+	end else begin
+		dispOut=blocktype;
+	end
+end
+always@(posedge clk) begin
+	if(set==1'b1) begin
+		blocktype<=SetIn[inL:5];
+		ant<=<=SetIn[4:4];
+		sugar<=<=SetIn[3:3];
+	end
+end
+endmodule

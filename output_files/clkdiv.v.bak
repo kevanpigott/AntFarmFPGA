@@ -1,0 +1,19 @@
+module clkdiv(clk,out);
+
+reg [16:0]count;
+reg store;
+initial begin
+	count=0;
+	store=0;
+end
+
+always@(posedge clk) begin
+	out<=store;
+	if((count%100)==0) begin
+		store<=!store;
+		count=count+1;
+	end else begin
+		count=count+1;
+	end
+end
+endmodule

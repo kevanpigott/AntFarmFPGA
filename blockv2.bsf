@@ -1,0 +1,1123 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 448 424)
+	(text "blockV2" (rect 5 0 43 12)(font "Arial" ))
+	(text "inst" (rect 8 160 25 172)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "en" (rect 0 0 11 12)(font "Arial" ))
+		(text "en" (rect 21 43 32 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 296)
+		(input)
+		(text "set" (rect 0 0 15 12)(font "Arial" ))
+		(text "set" (rect 21 291 36 303)(font "Arial" ))
+		(line (pt 0 296)(pt 16 296))
+	)
+	(port
+		(pt 0 280)
+		(input)
+		(text "SetIn[inL..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "SetIn[inL..0]" (rect 21 275 81 287)(font "Arial" ))
+		(line (pt 0 280)(pt 16 280)(line_width 3))
+	)
+	(port
+		(pt 160 0)
+		(input)
+		(text "inNorth[inL..0]" (rect 0 0 69 12)(font "Arial" ))
+		(text "inNorth[inL..0]" (rect 152 25 164 94)(font "Arial" )(vertical))
+		(line (pt 160 0)(pt 160 17)(line_width 3))
+	)
+	(port
+		(pt 192 360)
+		(input)
+		(text "inSouth[inL..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "inSouth[inL..0]" (rect 184 264 196 334)(font "Arial" )(vertical))
+		(line (pt 192 360)(pt 192 343)(line_width 3))
+	)
+	(port
+		(pt 384 160)
+		(input)
+		(text "inEast[inL..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "inEast[inL..0]" (rect 295 152 359 164)(font "Arial" ))
+		(line (pt 368 160)(pt 384 160)(line_width 3))
+	)
+	(port
+		(pt 0 184)
+		(input)
+		(text "inWest[inL..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "inWest[inL..0]" (rect 21 179 89 191)(font "Arial" ))
+		(line (pt 0 184)(pt 16 184)(line_width 3))
+	)
+	(port
+		(pt 192 0)
+		(output)
+		(text "outNorth[outL..0]" (rect 160 0 243 12)(font "Arial" ))
+		(text "outNorth[outL..0]" (rect 184 23 196 106)(font "Arial" )(vertical))
+		(line (pt 192 0)(pt 192 16)(line_width 3))
+	)
+	(port
+		(pt 160 360)
+		(output)
+		(text "outSouth[outL..0]" (rect 160 0 244 12)(font "Arial" ))
+		(text "outSouth[outL..0]" (rect 152 252 164 336)(font "Arial" )(vertical))
+		(line (pt 160 360)(pt 160 344)(line_width 3))
+	)
+	(port
+		(pt 384 184)
+		(output)
+		(text "outEast[outL..0]" (rect 160 0 239 12)(font "Arial" ))
+		(text "outEast[outL..0]" (rect 297 179 363 191)(font "Arial" ))
+		(line (pt 384 184)(pt 368 184)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(output)
+		(text "outWest[outL..0]" (rect 160 0 242 12)(font "Arial" ))
+		(text "outWest[outL..0]" (rect 24 152 106 164)(font "Arial" ))
+		(line (pt 16 160)(pt 0 160)(line_width 3))
+	)
+	(port
+		(pt 384 304)
+		(output)
+		(text "dispOut[4..0]" (rect 160 0 223 12)(font "Arial" ))
+		(text "dispOut[4..0]" (rect 310 299 363 311)(font "Arial" ))
+		(line (pt 384 304)(pt 368 304)(line_width 3))
+	)
+	(port
+		(pt 384 320)
+		(output)
+		(text "outState[7..0]" (rect 160 0 227 12)(font "Arial" ))
+		(text "outState[7..0]" (rect 307 315 363 327)(font "Arial" ))
+		(line (pt 384 320)(pt 368 320)(line_width 3))
+	)
+	(parameter
+		"inL"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"outL"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"empty"
+		"000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"air"
+		"001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"dirt"
+		"010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"ground"
+		"011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"queen"
+		"100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"wall"
+		"101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"errorblock"
+		"110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"tunnel"
+		"111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"START"
+		"00110011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"A"
+		"00000000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"B"
+		"00000001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"C"
+		"00000010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"D"
+		"00000011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"E"
+		"00000100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"F"
+		"00000101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"G"
+		"00000110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"H"
+		"00000111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"I"
+		"00001000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"J"
+		"00001001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"K"
+		"00001010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"L"
+		"00001011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"M"
+		"00001100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"N"
+		"00001101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"O"
+		"00001110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"P"
+		"00001111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Q"
+		"00010000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"R"
+		"00010001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S"
+		"00010010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"T"
+		"00010011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"U"
+		"00010100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"V"
+		"00010101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"W"
+		"00010110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"X"
+		"00010111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Y"
+		"00011000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Z"
+		"00011001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AA"
+		"00011010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AB"
+		"00011011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AC"
+		"00011100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AD"
+		"00011101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AE"
+		"00011110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AF"
+		"00011111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AG"
+		"00100000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AH"
+		"00100001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AI"
+		"00100010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AJ"
+		"00100011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AK"
+		"00100100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AL"
+		"00100101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AM"
+		"00100110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AN"
+		"00100111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AO"
+		"00101000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AP"
+		"00101001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AQ"
+		"00101010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AR"
+		"00101011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AS"
+		"00101100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AT"
+		"00101101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AU"
+		"00101110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AV"
+		"00101111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AW"
+		"00110000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AX"
+		"00110001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AY"
+		"00110010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"AZ"
+		"00110011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"BA"
+		"00110100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"BB"
+		"00110101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"BC"
+		"00110110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"BD"
+		"00110111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"BE"
+		"00111000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"BF"
+		"00111001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"BG"
+		"00111010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"BH"
+		"00111011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"CW"
+		"01100100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"CX"
+		"01100101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"CY"
+		"01100110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"DA"
+		"01101000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"DB"
+		"01101001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"DC"
+		"01101010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"DD"
+		"01101011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"DE"
+		"01101100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"DF"
+		"01101101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"DG"
+		"01101110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"DH"
+		"01101111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"DI"
+		"01110000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"DJ"
+		"01110001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"DK"
+		"01110010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"DL"
+		"01110011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"DM"
+		"01110100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"DN"
+		"01110101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"DO"
+		"01110110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"DP"
+		"01110111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"FREE"
+		"10010110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SEA"
+		"10010111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SEB"
+		"10011000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SEC"
+		"10011001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SED"
+		"10011010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SEE"
+		"10011100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SEF"
+		"10011101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SEG"
+		"10011110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"FD"
+		"10011111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"FREE2"
+		"10100000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SWA"
+		"10100001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SWB"
+		"10100010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SWC"
+		"10100011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SWD"
+		"10100100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SWE"
+		"10100101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SWF"
+		"10100110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SWG"
+		"10100111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"FM"
+		"10101000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"FN"
+		"10101001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SNG"
+		"10101010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SSE"
+		"10101011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"RWA"
+		"10101100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"WAIT"
+		"10101101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"WAIT2"
+		"10101110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"WAIT3"
+		"10101111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"WAIT4"
+		"10110000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"FV"
+		"10110001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"FW"
+		"10110010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"FX"
+		"10110011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"FY"
+		"10110100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GA"
+		"10110110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GB"
+		"10110111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GC"
+		"10111000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GD"
+		"10111001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GE"
+		"10111010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GF"
+		"10111011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GG"
+		"10111100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GH"
+		"10111101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GI"
+		"10111110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GJ"
+		"10111111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GK"
+		"11000000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GL"
+		"11000001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GM"
+		"11000010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GN"
+		"11000011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GO"
+		"11000100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GP"
+		"11000101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GQ"
+		"11000110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GR"
+		"11000111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GS"
+		"11001000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GT"
+		"11001001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GU"
+		"11001010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GV"
+		"11001011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GW"
+		"11001100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GX"
+		"11001101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GY"
+		"11001110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"HA"
+		"11010000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"HB"
+		"11010001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SSC"
+		"11010010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SSD"
+		"11010011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SSF"
+		"11010100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SSG"
+		"11010101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"HG"
+		"11010110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"HH"
+		"11010111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"HI"
+		"11011000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"HJ"
+		"11011001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"HK"
+		"11011010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"HL"
+		"11011011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"RA"
+		"11011100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"RB"
+		"11011101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"RN"
+		"11011110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"RNA"
+		"11011111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"RS"
+		"11100000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"RSA"
+		"11100001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"RE"
+		"11100010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"REA"
+		"11100011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"RW"
+		"11100100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"HV"
+		"11100101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SSA"
+		"11100110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SSB"
+		"11100111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SNA"
+		"11101000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SNB"
+		"11101010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SNC"
+		"11101011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SND"
+		"11101100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SNE"
+		"11101101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SNF"
+		"11101110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"IF"
+		"11101111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"IG"
+		"11110000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SRD"
+		"11110001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SRC"
+		"11110010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SRB"
+		"11110011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SRA"
+		"11110100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GSA"
+		"11110101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"NRD"
+		"11110110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"NRC"
+		"11110111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"NRB"
+		"11111000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"NRA"
+		"11111001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"GNA"
+		"11111010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SS"
+		"11111011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SN"
+		"11111100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SE"
+		"11111101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"SW"
+		"11111110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"ERROR"
+		"11111111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"IPbtl"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"IPbtr"
+		"6"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"IPa"
+		"5"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"IPs"
+		"4"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"IPver"
+		"2"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"IPsend"
+		"0"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"IPrec"
+		"1"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 360 344))
+	)
+	(annotation_block (parameter)(rect 240 -2784 448 16))
+)

@@ -1,6 +1,6 @@
 module display(in,out);
-input [3:0]in;
-output [6:0]out;
+input [4:0]in;
+output reg [6:0]out;
 //..0
 //5...1
 //..6
@@ -11,7 +11,7 @@ output [6:0]out;
 //
 //
 //
-reg [7:0] out;
+//reg [6:0] out;
 always@(*)
 begin
 	case({in})

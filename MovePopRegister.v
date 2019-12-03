@@ -6,7 +6,7 @@ input [2:0]RightIn;
 output reg [2:0]LeftOut;
 output reg [2:0]RightOut;
 parameter W=3;//node width
-parameter S=32;//number of nodes
+parameter S=4;//number of nodes should be 32
 parameter L=S*W;//overall length of array
 reg [L:0]store;//stores 128/4 moves = 32 moves
 //inout reg [L:0]Down;

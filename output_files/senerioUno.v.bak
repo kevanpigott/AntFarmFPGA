@@ -1,0 +1,20 @@
+module senerioUno(clk,en,outSet,outEn,out4,out3,out2,out1);
+
+input en,clk;
+output reg outEn;
+output reg outSet;
+output reg [7:0]out1;
+output reg [7:0]out2;
+output reg [7:0]out3;
+output reg [7:0]out4;
+
+reg start;
+initial begin
+outEn=0;
+outSet=0;
+out1=7'b11110000;
+out2=7'b11100000;
+out3=7'b11100000;
+out4=7'b11101000;
+start=0;
+end

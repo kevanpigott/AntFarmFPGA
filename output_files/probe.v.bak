@@ -1,0 +1,53 @@
+module probe(select,inAdisp,inBdisp,inAstate,inBstate,inAoutNorth,inBoutSouth,outOnes,outTens,outHundreds,outThousands);
+input	[7:0]inAstate;
+input	[7:0]inBstate;
+input [4:0]inAdisp;
+input [4:0]inBdisp;
+input	[7:0]inBoutNorth;
+input	[7:0]inAoutSouth;
+input [3:0]select;
+
+output reg[6:0]outOnes;
+output reg[6:0]outTens;
+output reg[6:0]outHundreds;
+output reg[6:0]outThousands;
+
+//			 _
+//			|B|
+//			 |
+//			|A|
+//
+//
+reg [4:0]BDin;
+wire [6:0]BDout;
+blockDisp inst_blockDisp(.in(BDin),.out(BDout));
+always@(*)begin
+	case({select})
+		3'd0:
+				begin
+					BDin=inBdisp;
+					outThousands=BDout;
+					BDin=inAdisp;
+					outHundreds=BDout;
+					
+					if(inBoutSouth[0]==1'b1) begin//receiving
+						outTens<=7'b0010010;
+					end else begin
+						outTens<=7'b1110111;
+					end
+					
+					if(inAoutSouth[1]==1'b1) begin//sending
+						outOnes<=7'b0010010;
+					end else begin
+						outOnes<=7'b1110111;
+					end
+				end
+		default:
+			begin
+				outOnes<=7'b1111111;
+				outTens<=7'b1111111;
+				outHundreds<=7'b1111111;
+				outThousands<=7'b1111111;
+			end
+	endcase
+end
