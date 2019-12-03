@@ -1,5 +1,5 @@
 Analysis & Synthesis report for antfarm
-Sun Dec 01 22:12:16 2019
+Tue Dec 03 13:40:54 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,29 +16,32 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. Registers Removed During Synthesis
   9. Removed Registers Triggering Further Register Optimizations
  10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: blockV2:inst4
- 13. Parameter Settings for User Entity Instance: blockV2:inst7
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: matrixEncoder:inst9
  14. Parameter Settings for User Entity Instance: blockV2:inst6
- 15. Parameter Settings for User Entity Instance: blockV2:inst3
- 16. Parameter Settings for User Entity Instance: blockV2:inst2
+ 15. Parameter Settings for User Entity Instance: blockV2:inst7
+ 16. Parameter Settings for User Entity Instance: blockV2:inst4
  17. Parameter Settings for User Entity Instance: blockV2:inst5
- 18. Parameter Settings for User Entity Instance: probe:inst|displayEncoder:inst_displayEncoder1
- 19. Parameter Settings for User Entity Instance: probe:inst|displayEncoder:inst_displayEncoder2
- 20. Parameter Settings for Inferred Entity Instance: probe:inst|displayEncoder:inst_displayEncoder1|lpm_divide:Div0
- 21. Parameter Settings for Inferred Entity Instance: probe:inst|displayEncoder:inst_displayEncoder2|lpm_divide:Div0
- 22. Parameter Settings for Inferred Entity Instance: probe:inst|displayEncoder:inst_displayEncoder1|lpm_divide:Div1
- 23. Parameter Settings for Inferred Entity Instance: probe:inst|displayEncoder:inst_displayEncoder2|lpm_divide:Div1
- 24. Parameter Settings for Inferred Entity Instance: clkdiv:inst8|lpm_divide:Mod0
- 25. Port Connectivity Checks: "probe:inst|display:inst_23"
- 26. Port Connectivity Checks: "probe:inst|display:inst_22"
- 27. Port Connectivity Checks: "probe:inst|display:inst_21"
- 28. Port Connectivity Checks: "probe:inst|display:inst_13"
- 29. Port Connectivity Checks: "probe:inst|display:inst_12"
- 30. Port Connectivity Checks: "probe:inst|display:inst_11"
- 31. Elapsed Time Per Partition
- 32. Analysis & Synthesis Messages
- 33. Analysis & Synthesis Suppressed Messages
+ 18. Parameter Settings for User Entity Instance: blockV2:inst2
+ 19. Parameter Settings for User Entity Instance: blockV2:inst3
+ 20. Parameter Settings for User Entity Instance: probe:inst|displayEncoder:inst_displayEncoder1
+ 21. Parameter Settings for User Entity Instance: probe:inst|displayEncoder:inst_displayEncoder2
+ 22. Parameter Settings for Inferred Entity Instance: probe:inst|displayEncoder:inst_displayEncoder1|lpm_divide:Div0
+ 23. Parameter Settings for Inferred Entity Instance: probe:inst|displayEncoder:inst_displayEncoder2|lpm_divide:Div0
+ 24. Parameter Settings for Inferred Entity Instance: probe:inst|displayEncoder:inst_displayEncoder1|lpm_divide:Div1
+ 25. Parameter Settings for Inferred Entity Instance: probe:inst|displayEncoder:inst_displayEncoder2|lpm_divide:Div1
+ 26. Parameter Settings for Inferred Entity Instance: clkdiv:inst8|lpm_divide:Mod0
+ 27. Port Connectivity Checks: "probe:inst|display:inst_23"
+ 28. Port Connectivity Checks: "probe:inst|display:inst_22"
+ 29. Port Connectivity Checks: "probe:inst|display:inst_21"
+ 30. Port Connectivity Checks: "probe:inst|display:inst_13"
+ 31. Port Connectivity Checks: "probe:inst|display:inst_12"
+ 32. Port Connectivity Checks: "probe:inst|display:inst_11"
+ 33. Port Connectivity Checks: "vga:inst1|vga640x480:display"
+ 34. Elapsed Time Per Partition
+ 35. Analysis & Synthesis Messages
+ 36. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -64,16 +67,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Dec 01 22:12:15 2019           ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec 03 13:40:54 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; antfarm                                         ;
 ; Top-level Entity Name              ; antfarm                                         ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 4,898                                           ;
-;     Total combinational functions  ; 4,793                                           ;
-;     Dedicated logic registers      ; 295                                             ;
-; Total registers                    ; 295                                             ;
-; Total pins                         ; 58                                              ;
+; Total logic elements               ; 5,055                                           ;
+;     Total combinational functions  ; 4,941                                           ;
+;     Dedicated logic registers      ; 344                                             ;
+; Total registers                    ; 344                                             ;
+; Total pins                         ; 74                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -190,6 +193,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; output_files/displayEncoder.v    ; yes             ; User Verilog HDL File              ; C:/altera/13.0sp1/quartus/projects/antfarm/output_files/displayEncoder.v ;         ;
 ; output_files/clkdiv.v            ; yes             ; User Verilog HDL File              ; C:/altera/13.0sp1/quartus/projects/antfarm/output_files/clkdiv.v         ;         ;
 ; output_files/probe.v             ; yes             ; User Verilog HDL File              ; C:/altera/13.0sp1/quartus/projects/antfarm/output_files/probe.v          ;         ;
+; vga640x480.v                     ; yes             ; User Verilog HDL File              ; C:/altera/13.0sp1/quartus/projects/antfarm/vga640x480.v                  ;         ;
+; output_files/matrixEncoder.v     ; yes             ; User Verilog HDL File              ; C:/altera/13.0sp1/quartus/projects/antfarm/output_files/matrixEncoder.v  ;         ;
+; vga.v                            ; yes             ; Auto-Found Verilog HDL File        ; C:/altera/13.0sp1/quartus/projects/antfarm/vga.v                         ;         ;
 ; lpm_divide.tdf                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_divide.tdf         ;         ;
 ; abs_divider.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/abs_divider.inc        ;         ;
 ; sign_div_unsign.inc              ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sign_div_unsign.inc    ;         ;
@@ -210,28 +216,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+------------------+
 ; Resource                                    ; Usage            ;
 +---------------------------------------------+------------------+
-; Estimated Total logic elements              ; 4,898            ;
+; Estimated Total logic elements              ; 5,055            ;
 ;                                             ;                  ;
-; Total combinational functions               ; 4793             ;
+; Total combinational functions               ; 4941             ;
 ; Logic element usage by number of LUT inputs ;                  ;
-;     -- 4 input functions                    ; 2347             ;
-;     -- 3 input functions                    ; 1069             ;
-;     -- <=2 input functions                  ; 1377             ;
+;     -- 4 input functions                    ; 2412             ;
+;     -- 3 input functions                    ; 1105             ;
+;     -- <=2 input functions                  ; 1424             ;
 ;                                             ;                  ;
 ; Logic elements by mode                      ;                  ;
-;     -- normal mode                          ; 3988             ;
-;     -- arithmetic mode                      ; 805              ;
+;     -- normal mode                          ; 4118             ;
+;     -- arithmetic mode                      ; 823              ;
 ;                                             ;                  ;
-; Total registers                             ; 295              ;
-;     -- Dedicated logic registers            ; 295              ;
+; Total registers                             ; 344              ;
+;     -- Dedicated logic registers            ; 344              ;
 ;     -- I/O registers                        ; 0                ;
 ;                                             ;                  ;
-; I/O pins                                    ; 58               ;
+; I/O pins                                    ; 74               ;
 ; Embedded Multiplier 9-bit elements          ; 0                ;
 ; Maximum fan-out node                        ; clkdiv:inst8|out ;
-; Maximum fan-out                             ; 201              ;
-; Total fan-out                               ; 15880            ;
-; Average fan-out                             ; 3.09             ;
+; Maximum fan-out                             ; 207              ;
+; Total fan-out                               ; 16494            ;
+; Average fan-out                             ; 3.08             ;
 +---------------------------------------------+------------------+
 
 
@@ -240,18 +246,19 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                     ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |antfarm                                     ; 4793 (0)          ; 295 (0)      ; 0           ; 0            ; 0       ; 0         ; 58   ; 0            ; |antfarm                                                                                                                                                ; work         ;
-;    |blockV2:inst2|                           ; 303 (303)         ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|blockV2:inst2                                                                                                                                  ; work         ;
-;    |blockV2:inst3|                           ; 354 (354)         ; 44 (44)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|blockV2:inst3                                                                                                                                  ; work         ;
-;    |blockV2:inst4|                           ; 349 (349)         ; 42 (42)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|blockV2:inst4                                                                                                                                  ; work         ;
+; |antfarm                                     ; 4941 (0)          ; 344 (0)      ; 0           ; 0            ; 0       ; 0         ; 74   ; 0            ; |antfarm                                                                                                                                                ; work         ;
+;    |blockV2:inst2|                           ; 301 (301)         ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|blockV2:inst2                                                                                                                                  ; work         ;
+;    |blockV2:inst3|                           ; 357 (357)         ; 45 (45)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|blockV2:inst3                                                                                                                                  ; work         ;
+;    |blockV2:inst4|                           ; 353 (353)         ; 42 (42)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|blockV2:inst4                                                                                                                                  ; work         ;
 ;    |blockV2:inst5|                           ; 303 (303)         ; 28 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|blockV2:inst5                                                                                                                                  ; work         ;
-;    |blockV2:inst6|                           ; 294 (294)         ; 29 (29)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|blockV2:inst6                                                                                                                                  ; work         ;
-;    |blockV2:inst7|                           ; 307 (307)         ; 28 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|blockV2:inst7                                                                                                                                  ; work         ;
+;    |blockV2:inst6|                           ; 306 (306)         ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|blockV2:inst6                                                                                                                                  ; work         ;
+;    |blockV2:inst7|                           ; 313 (313)         ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|blockV2:inst7                                                                                                                                  ; work         ;
 ;    |clkdiv:inst8|                            ; 2625 (89)         ; 66 (66)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|clkdiv:inst8                                                                                                                                   ; work         ;
 ;       |lpm_divide:Mod0|                      ; 2536 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|clkdiv:inst8|lpm_divide:Mod0                                                                                                                   ; work         ;
 ;          |lpm_divide_c8m:auto_generated|     ; 2536 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|clkdiv:inst8|lpm_divide:Mod0|lpm_divide_c8m:auto_generated                                                                                     ; work         ;
 ;             |sign_div_unsign_jnh:divider|    ; 2536 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|clkdiv:inst8|lpm_divide:Mod0|lpm_divide_c8m:auto_generated|sign_div_unsign_jnh:divider                                                         ; work         ;
 ;                |alt_u_div_86f:divider|       ; 2536 (2536)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|clkdiv:inst8|lpm_divide:Mod0|lpm_divide_c8m:auto_generated|sign_div_unsign_jnh:divider|alt_u_div_86f:divider                                   ; work         ;
+;    |matrixEncoder:inst9|                     ; 28 (28)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|matrixEncoder:inst9                                                                                                                            ; work         ;
 ;    |probe:inst|                              ; 258 (62)          ; 28 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|probe:inst                                                                                                                                     ; work         ;
 ;       |display:inst_11|                      ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|probe:inst|display:inst_11                                                                                                                     ; work         ;
 ;       |display:inst_12|                      ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|probe:inst|display:inst_12                                                                                                                     ; work         ;
@@ -277,6 +284,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |lpm_divide_1dm:auto_generated|  ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|probe:inst|displayEncoder:inst_displayEncoder2|lpm_divide:Div1|lpm_divide_1dm:auto_generated                                                   ; work         ;
 ;                |sign_div_unsign_bkh:divider| ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|probe:inst|displayEncoder:inst_displayEncoder2|lpm_divide:Div1|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider                       ; work         ;
 ;                   |alt_u_div_ove:divider|    ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|probe:inst|displayEncoder:inst_displayEncoder2|lpm_divide:Div1|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider ; work         ;
+;    |vga:inst1|                               ; 97 (50)           ; 28 (8)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|vga:inst1                                                                                                                                      ; work         ;
+;       |vga640x480:display|                   ; 47 (47)           ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|vga:inst1|vga640x480:display                                                                                                                   ; work         ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -286,16 +295,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------+-----------------------------------------------+
 ; Register name                           ; Reason for Removal                            ;
 +-----------------------------------------+-----------------------------------------------+
-; blockV2:inst5|Westreceiving             ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst5|Eastreceiving             ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst5|Westsending               ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst5|Eastsending               ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst5|sugarWest                 ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst5|sugarEast                 ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst5|antWest                   ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst5|antEast                   ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst5|inWestBlocktype[0..2]     ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst5|inEastBlocktype[0..2]     ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst3|Westreceiving             ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst3|Westsending               ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst3|sugarWest                 ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst3|antWest                   ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst3|inWestBlocktype[0..2]     ; Stuck at GND due to stuck port data_in        ;
 ; blockV2:inst2|Westreceiving             ; Stuck at GND due to stuck port data_in        ;
 ; blockV2:inst2|Eastreceiving             ; Stuck at GND due to stuck port data_in        ;
 ; blockV2:inst2|Westsending               ; Stuck at GND due to stuck port data_in        ;
@@ -306,20 +310,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; blockV2:inst2|antEast                   ; Stuck at GND due to stuck port data_in        ;
 ; blockV2:inst2|inWestBlocktype[0..2]     ; Stuck at GND due to stuck port data_in        ;
 ; blockV2:inst2|inEastBlocktype[0..2]     ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst3|Westreceiving             ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst3|Westsending               ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst3|sugarWest                 ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst3|antWest                   ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst3|inWestBlocktype[0..2]     ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst6|Eastreceiving             ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst6|Southreceiving            ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst6|Eastsending               ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst6|sugarEast                 ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst6|sugarSouth                ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst6|antEast                   ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst6|antSouth                  ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst6|inEastBlocktype[0..2]     ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst6|inSouthBlocktype[0..2]    ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst5|Westreceiving             ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst5|Eastreceiving             ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst5|Westsending               ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst5|Eastsending               ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst5|sugarWest                 ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst5|sugarEast                 ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst5|antWest                   ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst5|antEast                   ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst5|inWestBlocktype[0..2]     ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst5|inEastBlocktype[0..2]     ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst4|Westreceiving             ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst4|Westsending               ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst4|sugarWest                 ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst4|antWest                   ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst4|inWestBlocktype[0..2]     ; Stuck at GND due to stuck port data_in        ;
 ; blockV2:inst7|Eastreceiving             ; Stuck at GND due to stuck port data_in        ;
 ; blockV2:inst7|Northreceiving            ; Stuck at GND due to stuck port data_in        ;
 ; blockV2:inst7|Eastsending               ; Stuck at GND due to stuck port data_in        ;
@@ -330,26 +335,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; blockV2:inst7|antNorth                  ; Stuck at GND due to stuck port data_in        ;
 ; blockV2:inst7|inEastBlocktype[0..2]     ; Stuck at GND due to stuck port data_in        ;
 ; blockV2:inst7|inNorthBlocktype[0..2]    ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst4|Westreceiving             ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst4|Westsending               ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst4|sugarWest                 ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst4|antWest                   ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst4|inWestBlocktype[0..2]     ; Stuck at GND due to stuck port data_in        ;
-; blockV2:inst5|outNorth[4]               ; Merged with blockV2:inst5|outSouth[4]         ;
-; blockV2:inst5|outNorth[5]               ; Merged with blockV2:inst5|outSouth[5]         ;
-; blockV2:inst5|outNorth[6]               ; Merged with blockV2:inst5|outSouth[6]         ;
-; blockV2:inst5|outNorth[7]               ; Merged with blockV2:inst5|outSouth[7]         ;
-; blockV2:inst5|outNorth[8]               ; Merged with blockV2:inst5|outSouth[8]         ;
-; blockV2:inst2|outNorth[4]               ; Merged with blockV2:inst2|outSouth[4]         ;
-; blockV2:inst2|outNorth[5]               ; Merged with blockV2:inst2|outSouth[5]         ;
-; blockV2:inst2|outNorth[6]               ; Merged with blockV2:inst2|outSouth[6]         ;
-; blockV2:inst2|outNorth[7]               ; Merged with blockV2:inst2|outSouth[7]         ;
-; blockV2:inst2|outNorth[8]               ; Merged with blockV2:inst2|outSouth[8]         ;
-; blockV2:inst4|sugarNorth                ; Merged with blockV2:inst2|sugarSouth          ;
-; blockV2:inst4|antNorth                  ; Merged with blockV2:inst2|antSouth            ;
-; blockV2:inst4|inNorthBlocktype[0]       ; Merged with blockV2:inst2|inSouthBlocktype[0] ;
-; blockV2:inst4|inNorthBlocktype[1]       ; Merged with blockV2:inst2|inSouthBlocktype[1] ;
-; blockV2:inst4|inNorthBlocktype[2]       ; Merged with blockV2:inst2|inSouthBlocktype[2] ;
+; blockV2:inst6|Eastreceiving             ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst6|Southreceiving            ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst6|Eastsending               ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst6|sugarEast                 ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst6|sugarSouth                ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst6|antEast                   ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst6|antSouth                  ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst6|inEastBlocktype[0..2]     ; Stuck at GND due to stuck port data_in        ;
+; blockV2:inst6|inSouthBlocktype[0..2]    ; Stuck at GND due to stuck port data_in        ;
 ; blockV2:inst3|outSouth[4]               ; Merged with blockV2:inst3|outEast[4]          ;
 ; blockV2:inst3|outNorth[4]               ; Merged with blockV2:inst3|outEast[4]          ;
 ; blockV2:inst3|outSouth[5]               ; Merged with blockV2:inst3|outEast[5]          ;
@@ -360,36 +354,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; blockV2:inst3|outNorth[7]               ; Merged with blockV2:inst3|outEast[7]          ;
 ; blockV2:inst3|outSouth[8]               ; Merged with blockV2:inst3|outEast[8]          ;
 ; blockV2:inst3|outNorth[8]               ; Merged with blockV2:inst3|outEast[8]          ;
-; blockV2:inst5|sugarNorth                ; Merged with blockV2:inst3|sugarSouth          ;
-; blockV2:inst5|antNorth                  ; Merged with blockV2:inst3|antSouth            ;
-; blockV2:inst5|inNorthBlocktype[0]       ; Merged with blockV2:inst3|inSouthBlocktype[0] ;
-; blockV2:inst5|inNorthBlocktype[1]       ; Merged with blockV2:inst3|inSouthBlocktype[1] ;
-; blockV2:inst5|inNorthBlocktype[2]       ; Merged with blockV2:inst3|inSouthBlocktype[2] ;
-; blockV2:inst6|outNorth[4]               ; Merged with blockV2:inst6|outWest[4]          ;
-; blockV2:inst6|outNorth[5]               ; Merged with blockV2:inst6|outWest[5]          ;
-; blockV2:inst6|outNorth[6]               ; Merged with blockV2:inst6|outWest[6]          ;
-; blockV2:inst6|outNorth[7]               ; Merged with blockV2:inst6|outWest[7]          ;
-; blockV2:inst6|outNorth[8]               ; Merged with blockV2:inst6|outWest[8]          ;
-; blockV2:inst2|sugarNorth                ; Merged with blockV2:inst6|sugarWest           ;
-; blockV2:inst4|sugarSouth                ; Merged with blockV2:inst6|sugarWest           ;
-; blockV2:inst2|antNorth                  ; Merged with blockV2:inst6|antWest             ;
-; blockV2:inst4|antSouth                  ; Merged with blockV2:inst6|antWest             ;
-; blockV2:inst2|inNorthBlocktype[0]       ; Merged with blockV2:inst6|inWestBlocktype[0]  ;
-; blockV2:inst4|inSouthBlocktype[0]       ; Merged with blockV2:inst6|inWestBlocktype[0]  ;
-; blockV2:inst2|inNorthBlocktype[1]       ; Merged with blockV2:inst6|inWestBlocktype[1]  ;
-; blockV2:inst4|inSouthBlocktype[1]       ; Merged with blockV2:inst6|inWestBlocktype[1]  ;
-; blockV2:inst2|inNorthBlocktype[2]       ; Merged with blockV2:inst6|inWestBlocktype[2]  ;
-; blockV2:inst4|inSouthBlocktype[2]       ; Merged with blockV2:inst6|inWestBlocktype[2]  ;
-; blockV2:inst7|outSouth[4]               ; Merged with blockV2:inst7|outWest[4]          ;
-; blockV2:inst7|outSouth[5]               ; Merged with blockV2:inst7|outWest[5]          ;
-; blockV2:inst7|outSouth[6]               ; Merged with blockV2:inst7|outWest[6]          ;
-; blockV2:inst7|outSouth[7]               ; Merged with blockV2:inst7|outWest[7]          ;
-; blockV2:inst7|outSouth[8]               ; Merged with blockV2:inst7|outWest[8]          ;
-; blockV2:inst3|sugarEast                 ; Merged with blockV2:inst7|sugarSouth          ;
-; blockV2:inst3|antEast                   ; Merged with blockV2:inst7|antSouth            ;
-; blockV2:inst3|inEastBlocktype[0]        ; Merged with blockV2:inst7|inSouthBlocktype[0] ;
-; blockV2:inst3|inEastBlocktype[1]        ; Merged with blockV2:inst7|inSouthBlocktype[1] ;
-; blockV2:inst3|inEastBlocktype[2]        ; Merged with blockV2:inst7|inSouthBlocktype[2] ;
+; blockV2:inst2|outNorth[4]               ; Merged with blockV2:inst2|outSouth[4]         ;
+; blockV2:inst2|outNorth[5]               ; Merged with blockV2:inst2|outSouth[5]         ;
+; blockV2:inst2|outNorth[6]               ; Merged with blockV2:inst2|outSouth[6]         ;
+; blockV2:inst2|outNorth[7]               ; Merged with blockV2:inst2|outSouth[7]         ;
+; blockV2:inst2|outNorth[8]               ; Merged with blockV2:inst2|outSouth[8]         ;
+; blockV2:inst6|sugarWest                 ; Merged with blockV2:inst2|sugarNorth          ;
+; blockV2:inst4|sugarSouth                ; Merged with blockV2:inst2|sugarNorth          ;
+; blockV2:inst6|antWest                   ; Merged with blockV2:inst2|antNorth            ;
+; blockV2:inst4|antSouth                  ; Merged with blockV2:inst2|antNorth            ;
+; blockV2:inst6|inWestBlocktype[0]        ; Merged with blockV2:inst2|inNorthBlocktype[0] ;
+; blockV2:inst4|inSouthBlocktype[0]       ; Merged with blockV2:inst2|inNorthBlocktype[0] ;
+; blockV2:inst6|inWestBlocktype[1]        ; Merged with blockV2:inst2|inNorthBlocktype[1] ;
+; blockV2:inst4|inSouthBlocktype[1]       ; Merged with blockV2:inst2|inNorthBlocktype[1] ;
+; blockV2:inst6|inWestBlocktype[2]        ; Merged with blockV2:inst2|inNorthBlocktype[2] ;
+; blockV2:inst4|inSouthBlocktype[2]       ; Merged with blockV2:inst2|inNorthBlocktype[2] ;
+; blockV2:inst5|outNorth[4]               ; Merged with blockV2:inst5|outSouth[4]         ;
+; blockV2:inst5|outNorth[5]               ; Merged with blockV2:inst5|outSouth[5]         ;
+; blockV2:inst5|outNorth[6]               ; Merged with blockV2:inst5|outSouth[6]         ;
+; blockV2:inst5|outNorth[7]               ; Merged with blockV2:inst5|outSouth[7]         ;
+; blockV2:inst5|outNorth[8]               ; Merged with blockV2:inst5|outSouth[8]         ;
+; blockV2:inst3|sugarSouth                ; Merged with blockV2:inst5|sugarNorth          ;
+; blockV2:inst3|antSouth                  ; Merged with blockV2:inst5|antNorth            ;
+; blockV2:inst3|inSouthBlocktype[0]       ; Merged with blockV2:inst5|inNorthBlocktype[0] ;
+; blockV2:inst3|inSouthBlocktype[1]       ; Merged with blockV2:inst5|inNorthBlocktype[1] ;
+; blockV2:inst3|inSouthBlocktype[2]       ; Merged with blockV2:inst5|inNorthBlocktype[2] ;
 ; blockV2:inst4|outSouth[4]               ; Merged with blockV2:inst4|outEast[4]          ;
 ; blockV2:inst4|outNorth[4]               ; Merged with blockV2:inst4|outEast[4]          ;
 ; blockV2:inst4|outSouth[5]               ; Merged with blockV2:inst4|outEast[5]          ;
@@ -400,82 +389,98 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; blockV2:inst4|outNorth[7]               ; Merged with blockV2:inst4|outEast[7]          ;
 ; blockV2:inst4|outSouth[8]               ; Merged with blockV2:inst4|outEast[8]          ;
 ; blockV2:inst4|outNorth[8]               ; Merged with blockV2:inst4|outEast[8]          ;
-; blockV2:inst6|sugarNorth                ; Merged with blockV2:inst4|sugarEast           ;
-; blockV2:inst6|antNorth                  ; Merged with blockV2:inst4|antEast             ;
-; blockV2:inst6|inNorthBlocktype[0]       ; Merged with blockV2:inst4|inEastBlocktype[0]  ;
-; blockV2:inst6|inNorthBlocktype[1]       ; Merged with blockV2:inst4|inEastBlocktype[1]  ;
-; blockV2:inst6|inNorthBlocktype[2]       ; Merged with blockV2:inst4|inEastBlocktype[2]  ;
-; blockV2:inst7|sugarWest                 ; Merged with blockV2:inst5|sugarSouth          ;
-; blockV2:inst3|sugarNorth                ; Merged with blockV2:inst5|sugarSouth          ;
-; blockV2:inst7|antWest                   ; Merged with blockV2:inst5|antSouth            ;
-; blockV2:inst3|antNorth                  ; Merged with blockV2:inst5|antSouth            ;
-; blockV2:inst7|inWestBlocktype[0]        ; Merged with blockV2:inst5|inSouthBlocktype[0] ;
-; blockV2:inst3|inNorthBlocktype[0]       ; Merged with blockV2:inst5|inSouthBlocktype[0] ;
-; blockV2:inst7|inWestBlocktype[1]        ; Merged with blockV2:inst5|inSouthBlocktype[1] ;
-; blockV2:inst3|inNorthBlocktype[1]       ; Merged with blockV2:inst5|inSouthBlocktype[1] ;
-; blockV2:inst7|inWestBlocktype[2]        ; Merged with blockV2:inst5|inSouthBlocktype[2] ;
-; blockV2:inst3|inNorthBlocktype[2]       ; Merged with blockV2:inst5|inSouthBlocktype[2] ;
-; blockV2:inst5|receivingSouth            ; Merged with blockV2:inst5|receivingNorth      ;
-; blockV2:inst5|blocktype[2]              ; Merged with blockV2:inst5|blocktype[1]        ;
-; blockV2:inst5|outSouth[1]               ; Merged with blockV2:inst5|outNorth[1]         ;
-; blockV2:inst5|Southreceiving            ; Merged with blockV2:inst3|Northreceiving      ;
-; blockV2:inst7|Westreceiving             ; Merged with blockV2:inst3|Northreceiving      ;
-; blockV2:inst5|Northreceiving            ; Merged with blockV2:inst3|Southreceiving      ;
-; blockV2:inst2|receivingSouth            ; Merged with blockV2:inst2|receivingNorth      ;
-; blockV2:inst2|blocktype[2]              ; Merged with blockV2:inst2|blocktype[1]        ;
-; blockV2:inst2|outSouth[1]               ; Merged with blockV2:inst2|outNorth[1]         ;
-; blockV2:inst4|Northreceiving            ; Merged with blockV2:inst2|Southreceiving      ;
-; blockV2:inst4|Southreceiving            ; Merged with blockV2:inst2|Northreceiving      ;
-; blockV2:inst6|Westreceiving             ; Merged with blockV2:inst2|Northreceiving      ;
+; blockV2:inst2|sugarSouth                ; Merged with blockV2:inst4|sugarNorth          ;
+; blockV2:inst2|antSouth                  ; Merged with blockV2:inst4|antNorth            ;
+; blockV2:inst2|inSouthBlocktype[0]       ; Merged with blockV2:inst4|inNorthBlocktype[0] ;
+; blockV2:inst2|inSouthBlocktype[1]       ; Merged with blockV2:inst4|inNorthBlocktype[1] ;
+; blockV2:inst2|inSouthBlocktype[2]       ; Merged with blockV2:inst4|inNorthBlocktype[2] ;
+; blockV2:inst7|outSouth[4]               ; Merged with blockV2:inst7|outWest[4]          ;
+; blockV2:inst7|outSouth[5]               ; Merged with blockV2:inst7|outWest[5]          ;
+; blockV2:inst7|outSouth[6]               ; Merged with blockV2:inst7|outWest[6]          ;
+; blockV2:inst7|outSouth[7]               ; Merged with blockV2:inst7|outWest[7]          ;
+; blockV2:inst7|outSouth[8]               ; Merged with blockV2:inst7|outWest[8]          ;
+; blockV2:inst3|sugarNorth                ; Merged with blockV2:inst7|sugarWest           ;
+; blockV2:inst5|sugarSouth                ; Merged with blockV2:inst7|sugarWest           ;
+; blockV2:inst3|antNorth                  ; Merged with blockV2:inst7|antWest             ;
+; blockV2:inst5|antSouth                  ; Merged with blockV2:inst7|antWest             ;
+; blockV2:inst3|inNorthBlocktype[0]       ; Merged with blockV2:inst7|inWestBlocktype[0]  ;
+; blockV2:inst5|inSouthBlocktype[0]       ; Merged with blockV2:inst7|inWestBlocktype[0]  ;
+; blockV2:inst3|inNorthBlocktype[1]       ; Merged with blockV2:inst7|inWestBlocktype[1]  ;
+; blockV2:inst5|inSouthBlocktype[1]       ; Merged with blockV2:inst7|inWestBlocktype[1]  ;
+; blockV2:inst3|inNorthBlocktype[2]       ; Merged with blockV2:inst7|inWestBlocktype[2]  ;
+; blockV2:inst5|inSouthBlocktype[2]       ; Merged with blockV2:inst7|inWestBlocktype[2]  ;
+; blockV2:inst6|outNorth[4]               ; Merged with blockV2:inst6|outWest[4]          ;
+; blockV2:inst6|outNorth[5]               ; Merged with blockV2:inst6|outWest[5]          ;
+; blockV2:inst6|outNorth[6]               ; Merged with blockV2:inst6|outWest[6]          ;
+; blockV2:inst6|outNorth[7]               ; Merged with blockV2:inst6|outWest[7]          ;
+; blockV2:inst6|outNorth[8]               ; Merged with blockV2:inst6|outWest[8]          ;
+; blockV2:inst4|sugarEast                 ; Merged with blockV2:inst6|sugarNorth          ;
+; blockV2:inst4|antEast                   ; Merged with blockV2:inst6|antNorth            ;
+; blockV2:inst4|inEastBlocktype[0]        ; Merged with blockV2:inst6|inNorthBlocktype[0] ;
+; blockV2:inst4|inEastBlocktype[1]        ; Merged with blockV2:inst6|inNorthBlocktype[1] ;
+; blockV2:inst4|inEastBlocktype[2]        ; Merged with blockV2:inst6|inNorthBlocktype[2] ;
+; vga:inst1|pix_stb                       ; Merged with vga:inst1|cnt[15]                 ;
+; blockV2:inst7|sugarSouth                ; Merged with blockV2:inst3|sugarEast           ;
+; blockV2:inst7|antSouth                  ; Merged with blockV2:inst3|antEast             ;
+; blockV2:inst7|inSouthBlocktype[0]       ; Merged with blockV2:inst3|inEastBlocktype[0]  ;
+; blockV2:inst7|inSouthBlocktype[1]       ; Merged with blockV2:inst3|inEastBlocktype[1]  ;
+; blockV2:inst7|inSouthBlocktype[2]       ; Merged with blockV2:inst3|inEastBlocktype[2]  ;
 ; blockV2:inst3|receivingNorth            ; Merged with blockV2:inst3|receivingEast       ;
 ; blockV2:inst3|receivingSouth            ; Merged with blockV2:inst3|receivingEast       ;
 ; blockV2:inst3|blocktype[2]              ; Merged with blockV2:inst3|blocktype[1]        ;
 ; blockV2:inst3|outNorth[1]               ; Merged with blockV2:inst3|outEast[1]          ;
 ; blockV2:inst3|outSouth[1]               ; Merged with blockV2:inst3|outEast[1]          ;
 ; blockV2:inst7|Southreceiving            ; Merged with blockV2:inst3|Eastreceiving       ;
-; blockV2:inst6|receivingWest             ; Merged with blockV2:inst6|receivingNorth      ;
-; blockV2:inst6|blocktype[2]              ; Merged with blockV2:inst6|blocktype[1]        ;
-; blockV2:inst6|outWest[1]                ; Merged with blockV2:inst6|outNorth[1]         ;
-; blockV2:inst6|Northreceiving            ; Merged with blockV2:inst4|Eastreceiving       ;
-; blockV2:inst7|receivingWest             ; Merged with blockV2:inst7|receivingSouth      ;
-; blockV2:inst7|blocktype[2]              ; Merged with blockV2:inst7|blocktype[1]        ;
-; blockV2:inst7|outWest[1]                ; Merged with blockV2:inst7|outSouth[1]         ;
+; blockV2:inst5|Northreceiving            ; Merged with blockV2:inst3|Southreceiving      ;
+; blockV2:inst5|Southreceiving            ; Merged with blockV2:inst3|Northreceiving      ;
+; blockV2:inst7|Westreceiving             ; Merged with blockV2:inst3|Northreceiving      ;
+; blockV2:inst2|receivingSouth            ; Merged with blockV2:inst2|receivingNorth      ;
+; blockV2:inst2|blocktype[2]              ; Merged with blockV2:inst2|blocktype[1]        ;
+; blockV2:inst2|outSouth[1]               ; Merged with blockV2:inst2|outNorth[1]         ;
+; blockV2:inst4|Northreceiving            ; Merged with blockV2:inst2|Southreceiving      ;
+; blockV2:inst4|Southreceiving            ; Merged with blockV2:inst2|Northreceiving      ;
+; blockV2:inst6|Westreceiving             ; Merged with blockV2:inst2|Northreceiving      ;
+; blockV2:inst5|receivingSouth            ; Merged with blockV2:inst5|receivingNorth      ;
+; blockV2:inst5|blocktype[2]              ; Merged with blockV2:inst5|blocktype[1]        ;
+; blockV2:inst5|outSouth[1]               ; Merged with blockV2:inst5|outNorth[1]         ;
 ; blockV2:inst4|receivingNorth            ; Merged with blockV2:inst4|receivingEast       ;
 ; blockV2:inst4|receivingSouth            ; Merged with blockV2:inst4|receivingEast       ;
 ; blockV2:inst4|blocktype[2]              ; Merged with blockV2:inst4|blocktype[1]        ;
 ; blockV2:inst4|outNorth[1]               ; Merged with blockV2:inst4|outEast[1]          ;
 ; blockV2:inst4|outSouth[1]               ; Merged with blockV2:inst4|outEast[1]          ;
-; blockV2:inst5|outSouth[8]               ; Merged with blockV2:inst5|outSouth[7]         ;
-; blockV2:inst2|outSouth[8]               ; Merged with blockV2:inst2|outSouth[7]         ;
+; blockV2:inst6|Northreceiving            ; Merged with blockV2:inst4|Eastreceiving       ;
+; blockV2:inst7|receivingWest             ; Merged with blockV2:inst7|receivingSouth      ;
+; blockV2:inst7|outWest[1]                ; Merged with blockV2:inst7|outSouth[1]         ;
+; blockV2:inst6|receivingWest             ; Merged with blockV2:inst6|receivingNorth      ;
+; blockV2:inst6|outWest[1]                ; Merged with blockV2:inst6|outNorth[1]         ;
+; vga:inst1|VGA_G[1]                      ; Merged with vga:inst1|VGA_B[1]                ;
 ; blockV2:inst3|outEast[8]                ; Merged with blockV2:inst3|outEast[7]          ;
-; blockV2:inst6|outWest[8]                ; Merged with blockV2:inst6|outWest[7]          ;
-; blockV2:inst7|outWest[8]                ; Merged with blockV2:inst7|outWest[7]          ;
+; blockV2:inst2|outSouth[8]               ; Merged with blockV2:inst2|outSouth[7]         ;
+; blockV2:inst5|outSouth[8]               ; Merged with blockV2:inst5|outSouth[7]         ;
 ; blockV2:inst4|outEast[8]                ; Merged with blockV2:inst4|outEast[7]          ;
-; blockV2:inst2|inSouthBlocktype[2]       ; Merged with blockV2:inst2|inSouthBlocktype[1] ;
-; blockV2:inst3|inSouthBlocktype[2]       ; Merged with blockV2:inst3|inSouthBlocktype[1] ;
-; blockV2:inst6|inWestBlocktype[2]        ; Merged with blockV2:inst6|inWestBlocktype[1]  ;
-; blockV2:inst7|inSouthBlocktype[2]       ; Merged with blockV2:inst7|inSouthBlocktype[1] ;
-; blockV2:inst4|inEastBlocktype[2]        ; Merged with blockV2:inst4|inEastBlocktype[1]  ;
-; blockV2:inst5|inSouthBlocktype[2]       ; Merged with blockV2:inst5|inSouthBlocktype[1] ;
-; blockV2:inst5|blocktype[1]              ; Stuck at VCC due to stuck port data_in        ;
-; blockV2:inst5|outSouth[7]               ; Stuck at VCC due to stuck port data_in        ;
-; blockV2:inst2|blocktype[1]              ; Stuck at VCC due to stuck port data_in        ;
-; blockV2:inst2|outSouth[7]               ; Stuck at VCC due to stuck port data_in        ;
-; blockV2:inst2|inSouthBlocktype[1]       ; Stuck at VCC due to stuck port data_in        ;
+; blockV2:inst2|inNorthBlocktype[2]       ; Merged with blockV2:inst2|inNorthBlocktype[1] ;
+; blockV2:inst5|inNorthBlocktype[2]       ; Merged with blockV2:inst5|inNorthBlocktype[1] ;
+; blockV2:inst4|inNorthBlocktype[2]       ; Merged with blockV2:inst4|inNorthBlocktype[1] ;
+; blockV2:inst7|inWestBlocktype[2]        ; Merged with blockV2:inst7|inWestBlocktype[1]  ;
 ; blockV2:inst3|blocktype[1]              ; Stuck at VCC due to stuck port data_in        ;
 ; blockV2:inst3|outEast[7]                ; Stuck at VCC due to stuck port data_in        ;
-; blockV2:inst3|inSouthBlocktype[1]       ; Stuck at VCC due to stuck port data_in        ;
-; blockV2:inst6|blocktype[1]              ; Stuck at VCC due to stuck port data_in        ;
-; blockV2:inst6|outWest[7]                ; Stuck at VCC due to stuck port data_in        ;
-; blockV2:inst6|inWestBlocktype[1]        ; Stuck at VCC due to stuck port data_in        ;
-; blockV2:inst7|blocktype[1]              ; Stuck at VCC due to stuck port data_in        ;
-; blockV2:inst7|outWest[7]                ; Stuck at VCC due to stuck port data_in        ;
-; blockV2:inst7|inSouthBlocktype[1]       ; Stuck at VCC due to stuck port data_in        ;
+; blockV2:inst2|blocktype[1]              ; Stuck at VCC due to stuck port data_in        ;
+; blockV2:inst2|outSouth[7]               ; Stuck at VCC due to stuck port data_in        ;
+; blockV2:inst2|inNorthBlocktype[1]       ; Stuck at VCC due to stuck port data_in        ;
+; blockV2:inst5|blocktype[1]              ; Stuck at VCC due to stuck port data_in        ;
+; blockV2:inst5|outSouth[7]               ; Stuck at VCC due to stuck port data_in        ;
+; blockV2:inst5|inNorthBlocktype[1]       ; Stuck at VCC due to stuck port data_in        ;
 ; blockV2:inst4|blocktype[1]              ; Stuck at VCC due to stuck port data_in        ;
 ; blockV2:inst4|outEast[7]                ; Stuck at VCC due to stuck port data_in        ;
-; blockV2:inst4|inEastBlocktype[1]        ; Stuck at VCC due to stuck port data_in        ;
-; blockV2:inst5|inSouthBlocktype[1]       ; Stuck at VCC due to stuck port data_in        ;
-; Total Number of Removed Registers = 209 ;                                               ;
+; blockV2:inst4|inNorthBlocktype[1]       ; Stuck at VCC due to stuck port data_in        ;
+; blockV2:inst7|inWestBlocktype[1]        ; Stuck at VCC due to stuck port data_in        ;
+; blockV2:inst6|blocktype[1]              ; Stuck at VCC due to stuck port data_in        ;
+; blockV2:inst7|blocktype[1]              ; Stuck at VCC due to stuck port data_in        ;
+; blockV2:inst7|outWest[7]                ; Stuck at VCC due to stuck port data_in        ;
+; blockV2:inst6|outWest[7]                ; Stuck at VCC due to stuck port data_in        ;
+; blockV2:inst6|inNorthBlocktype[1]       ; Stuck at VCC due to stuck port data_in        ;
+; blockV2:inst3|inEastBlocktype[1]        ; Stuck at VCC due to stuck port data_in        ;
+; Total Number of Removed Registers = 205 ;                                               ;
 +-----------------------------------------+-----------------------------------------------+
 
 
@@ -484,17 +489,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------+---------------------------+--------------------------------------------------------------+
 ; Register name              ; Reason for Removal        ; Registers Removed due to This Register                       ;
 +----------------------------+---------------------------+--------------------------------------------------------------+
-; blockV2:inst5|blocktype[1] ; Stuck at VCC              ; blockV2:inst5|outSouth[7], blockV2:inst2|inSouthBlocktype[1] ;
+; blockV2:inst3|blocktype[1] ; Stuck at VCC              ; blockV2:inst3|outEast[7], blockV2:inst2|inNorthBlocktype[1]  ;
 ;                            ; due to stuck port data_in ;                                                              ;
-; blockV2:inst2|blocktype[1] ; Stuck at VCC              ; blockV2:inst2|outSouth[7], blockV2:inst3|inSouthBlocktype[1] ;
+; blockV2:inst2|blocktype[1] ; Stuck at VCC              ; blockV2:inst2|outSouth[7], blockV2:inst5|inNorthBlocktype[1] ;
 ;                            ; due to stuck port data_in ;                                                              ;
-; blockV2:inst3|blocktype[1] ; Stuck at VCC              ; blockV2:inst3|outEast[7], blockV2:inst6|inWestBlocktype[1]   ;
+; blockV2:inst5|blocktype[1] ; Stuck at VCC              ; blockV2:inst5|outSouth[7], blockV2:inst4|inNorthBlocktype[1] ;
 ;                            ; due to stuck port data_in ;                                                              ;
-; blockV2:inst6|blocktype[1] ; Stuck at VCC              ; blockV2:inst6|outWest[7], blockV2:inst7|inSouthBlocktype[1]  ;
+; blockV2:inst4|blocktype[1] ; Stuck at VCC              ; blockV2:inst4|outEast[7], blockV2:inst7|inWestBlocktype[1]   ;
 ;                            ; due to stuck port data_in ;                                                              ;
-; blockV2:inst7|blocktype[1] ; Stuck at VCC              ; blockV2:inst7|outWest[7], blockV2:inst4|inEastBlocktype[1]   ;
+; blockV2:inst6|blocktype[1] ; Stuck at VCC              ; blockV2:inst6|outWest[7], blockV2:inst3|inEastBlocktype[1]   ;
 ;                            ; due to stuck port data_in ;                                                              ;
-; blockV2:inst4|blocktype[1] ; Stuck at VCC              ; blockV2:inst4|outEast[7], blockV2:inst5|inSouthBlocktype[1]  ;
+; blockV2:inst7|blocktype[1] ; Stuck at VCC              ; blockV2:inst7|outWest[7], blockV2:inst6|inNorthBlocktype[1]  ;
 ;                            ; due to stuck port data_in ;                                                              ;
 +----------------------------+---------------------------+--------------------------------------------------------------+
 
@@ -504,52 +509,82 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 295   ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 11    ;
+; Total registers                              ; 344   ;
+; Number of registers using Synchronous Clear  ; 10    ;
+; Number of registers using Synchronous Load   ; 21    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 5     ;
+; Number of registers using Clock Enable       ; 24    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
-; 6:1                ; 14 bits   ; 56 LEs        ; 28 LEs               ; 28 LEs                 ; Yes        ; |antfarm|probe:inst|outOnes[6]     ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |antfarm|probe:inst|outTens[0]     ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |antfarm|probe:inst|outHundreds[3] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst4|Mux0        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst4|Mux0        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|blockV2:inst4|Mux0        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |antfarm|blockV2:inst2|Mux2        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst2|Mux2        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|blockV2:inst2|Mux2        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|blockV2:inst2|Mux2        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst3|Mux2        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst3|Mux2        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|blockV2:inst3|Mux2        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst3|Mux2        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |antfarm|blockV2:inst5|Mux2        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst5|Mux2        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|blockV2:inst5|Mux2        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|blockV2:inst5|Mux2        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |antfarm|blockV2:inst7|Mux2        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|blockV2:inst7|Mux2        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst7|Mux2        ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst7|Mux2        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |antfarm|blockV2:inst6|Mux5        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |antfarm|blockV2:inst6|Mux5        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst6|Mux5        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|blockV2:inst6|Mux5        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; blockV2:inst7|blocktype[2]             ; 5       ;
+; blockV2:inst6|blocktype[2]             ; 6       ;
+; Total number of inverted registers = 2 ;         ;
++----------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |antfarm|matrixEncoder:inst9|storeSel[2]         ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |antfarm|vga:inst1|vga640x480:display|h_count[8] ;
+; 6:1                ; 14 bits   ; 56 LEs        ; 28 LEs               ; 28 LEs                 ; Yes        ; |antfarm|probe:inst|outHundreds[4]               ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |antfarm|vga:inst1|vga640x480:display|v_count[8] ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |antfarm|probe:inst|outOnes[0]                   ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |antfarm|probe:inst|outHundreds[3]               ;
+; 257:1              ; 2 bits    ; 342 LEs       ; 2 LEs                ; 340 LEs                ; Yes        ; |antfarm|blockV2:inst6|blocktype[2]              ;
+; 257:1              ; 2 bits    ; 342 LEs       ; 2 LEs                ; 340 LEs                ; Yes        ; |antfarm|blockV2:inst7|blocktype[2]              ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst4|Mux0                      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst4|Mux0                      ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|blockV2:inst4|Mux0                      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |antfarm|blockV2:inst2|Mux2                      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst2|Mux2                      ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|blockV2:inst2|Mux2                      ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|blockV2:inst2|Mux2                      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst3|Mux2                      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst3|Mux2                      ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|blockV2:inst3|Mux2                      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst3|Mux2                      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |antfarm|blockV2:inst5|Mux2                      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst5|Mux2                      ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|blockV2:inst5|Mux2                      ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|blockV2:inst5|Mux2                      ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |antfarm|blockV2:inst6|Mux5                      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst6|Mux5                      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst7|Mux2                      ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |antfarm|blockV2:inst7|Mux2                      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst7|Mux2                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: matrixEncoder:inst9 ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; empty          ; 000   ; Unsigned Binary                         ;
+; air            ; 001   ; Unsigned Binary                         ;
+; dirt           ; 010   ; Unsigned Binary                         ;
+; ground         ; 011   ; Unsigned Binary                         ;
+; queen          ; 100   ; Unsigned Binary                         ;
+; wall           ; 101   ; Unsigned Binary                         ;
+; errorblock     ; 110   ; Unsigned Binary                         ;
+; tunnel         ; 111   ; Unsigned Binary                         ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: blockV2:inst4 ;
+; Parameter Settings for User Entity Instance: blockV2:inst6 ;
 +----------------+----------+--------------------------------+
 ; Parameter Name ; Value    ; Type                           ;
 +----------------+----------+--------------------------------+
@@ -965,7 +1000,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: blockV2:inst6 ;
+; Parameter Settings for User Entity Instance: blockV2:inst4 ;
 +----------------+----------+--------------------------------+
 ; Parameter Name ; Value    ; Type                           ;
 +----------------+----------+--------------------------------+
@@ -1173,7 +1208,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: blockV2:inst3 ;
+; Parameter Settings for User Entity Instance: blockV2:inst5 ;
 +----------------+----------+--------------------------------+
 ; Parameter Name ; Value    ; Type                           ;
 +----------------+----------+--------------------------------+
@@ -1589,7 +1624,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: blockV2:inst5 ;
+; Parameter Settings for User Entity Instance: blockV2:inst3 ;
 +----------------+----------+--------------------------------+
 ; Parameter Name ; Value    ; Type                           ;
 +----------------+----------+--------------------------------+
@@ -1985,6 +2020,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "vga:inst1|vga640x480:display"                                                                                   ;
++-------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                                                  ;
++-------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; o_blanking  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; o_active    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; o_screenend ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; o_animate   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -2000,7 +2047,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Dec 01 22:11:57 2019
+    Info: Processing started: Tue Dec 03 13:40:36 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off antfarm -c antfarm
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Warning (10463): Verilog HDL Declaration warning at block.v(6): "type" is SystemVerilog-2005 keyword
@@ -2037,9 +2084,34 @@ Info (12021): Found 1 design units, including 1 entities, in source file output_
     Info (12023): Found entity 1: clkdiv
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/probe.v
     Info (12023): Found entity 1: probe
+Info (12021): Found 1 design units, including 1 entities, in source file vga640x480.v
+    Info (12023): Found entity 1: vga640x480
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/matrixencoder.v
+    Info (12023): Found entity 1: matrixEncoder
 Info (12127): Elaborating entity "antfarm" for the top level hierarchy
 Warning (275009): Pin "clkKey" not connected
-Info (12128): Elaborating entity "blockV2" for hierarchy "blockV2:inst4"
+Warning (12125): Using design file vga.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: vga
+Info (12128): Elaborating entity "vga" for hierarchy "vga:inst1"
+Warning (10036): Verilog HDL or VHDL warning at vga.v(12): object "sq_sky" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at vga.v(14): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at vga.v(15): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at vga.v(17): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at vga.v(18): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at vga.v(20): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at vga.v(21): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at vga.v(413): truncated value with size 32 to match size of target (1)
+Warning (10034): Output port "VGA_R[2]" at vga.v(6) has no driver
+Warning (10034): Output port "VGA_R[0]" at vga.v(6) has no driver
+Warning (10034): Output port "VGA_G[0]" at vga.v(7) has no driver
+Warning (10034): Output port "VGA_B[0]" at vga.v(8) has no driver
+Info (12128): Elaborating entity "vga640x480" for hierarchy "vga:inst1|vga640x480:display"
+Warning (10230): Verilog HDL assignment warning at vga640x480.v(33): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at vga640x480.v(34): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at vga640x480.v(60): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at vga640x480.v(63): truncated value with size 32 to match size of target (10)
+Info (12128): Elaborating entity "matrixEncoder" for hierarchy "matrixEncoder:inst9"
+Info (12128): Elaborating entity "blockV2" for hierarchy "blockV2:inst6"
 Warning (10036): Verilog HDL or VHDL warning at blockV2.v(92): object "upOfQ" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at blockV2.v(93): object "downOfQ" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at blockV2.v(107): object "Southsending" assigned a value but never read
@@ -2102,7 +2174,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_jnh
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_86f.tdf
     Info (12023): Found entity 1: alt_u_div_86f
-Warning (12241): 6 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "GLED[8]" is stuck at VCC
     Warning (13410): Pin "GLED[7]" is stuck at VCC
@@ -2110,6 +2182,10 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "RLED[8]" is stuck at VCC
     Warning (13410): Pin "RLED[7]" is stuck at VCC
     Warning (13410): Pin "RLED[3]" is stuck at GND
+    Warning (13410): Pin "VGA_BLUE[0]" is stuck at GND
+    Warning (13410): Pin "VGA_GREEN[0]" is stuck at GND
+    Warning (13410): Pin "VGA_RED[2]" is stuck at GND
+    Warning (13410): Pin "VGA_RED[0]" is stuck at GND
 Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "probe:inst|displayEncoder:inst_displayEncoder1|lpm_divide:Div1|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_6_result_int[0]~10"
     Info (17048): Logic cell "probe:inst|displayEncoder:inst_displayEncoder2|lpm_divide:Div1|lpm_divide_1dm:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_ove:divider|add_sub_6_result_int[0]~10"
@@ -2147,14 +2223,14 @@ Warning (21074): Design contains 6 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "setinputs[5]"
     Warning (15610): No output dependent on input pin "setinputs[4]"
     Warning (15610): No output dependent on input pin "clkKey"
-Info (21057): Implemented 4959 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 46 output pins
-    Info (21061): Implemented 4901 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 61 warnings
+Info (21057): Implemented 5132 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
+    Info (21059): Implemented 60 output pins
+    Info (21061): Implemented 5058 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 82 warnings
     Info: Peak virtual memory: 4660 megabytes
-    Info: Processing ended: Sun Dec 01 22:12:16 2019
-    Info: Elapsed time: 00:00:19
+    Info: Processing ended: Tue Dec 03 13:40:54 2019
+    Info: Elapsed time: 00:00:18
     Info: Total CPU time (on all processors): 00:00:18
 
 
