@@ -3,16 +3,16 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'clk'
-Slack : -218.759
-TNS   : -810.050
+Slack : -235.377
+TNS   : -796.275
 
 Type  : Slow Model Setup 'clkdiv:inst8|out'
-Slack : -5.899
-TNS   : -551.623
+Slack : -5.356
+TNS   : -537.890
 
 Type  : Slow Model Setup 'VGA_CLK'
-Slack : -4.072
-TNS   : -104.919
+Slack : -4.404
+TNS   : -118.369
 
 Type  : Slow Model Hold 'VGA_CLK'
 Slack : 0.445
@@ -39,16 +39,16 @@ Slack : -0.611
 TNS   : -252.954
 
 Type  : Fast Model Setup 'clk'
-Slack : -83.941
-TNS   : -259.687
+Slack : -90.782
+TNS   : -254.627
 
 Type  : Fast Model Setup 'clkdiv:inst8|out'
-Slack : -1.709
-TNS   : -109.971
+Slack : -1.481
+TNS   : -102.887
 
 Type  : Fast Model Setup 'VGA_CLK'
-Slack : -0.920
-TNS   : -17.721
+Slack : -1.055
+TNS   : -23.563
 
 Type  : Fast Model Hold 'VGA_CLK'
 Slack : 0.215

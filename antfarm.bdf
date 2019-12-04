@@ -91,7 +91,7 @@ applicable agreement for further details.
 	(input)
 	(rect 1560 -1984 1728 -1968)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "VGA_CLK" (rect 5 0 55 12)(font "Arial" ))
+	(text "VGA_CLK" (rect 5 0 54 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -108,7 +108,7 @@ applicable agreement for further details.
 	(input)
 	(rect 1864 -1968 2032 -1952)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "VGA_RST" (rect 5 0 55 12)(font "Arial" ))
+	(text "VGA_RST" (rect 5 0 54 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -8036,11 +8036,6 @@ applicable agreement for further details.
 	(pt 1464 -1976)
 	(bus)
 )
-(connector
-	(pt 1464 -1976)
-	(pt 1808 -1888)
-	(bus)
-)
 (junction (pt 1752 -2504))
 (junction (pt 152 -2688))
 (junction (pt 200 -2424))
@@ -8066,4 +8061,4 @@ applicable agreement for further details.
 (junction (pt 176 -2232))
 (junction (pt 200 -1984))
 (junction (pt 1776 -1976))
-(junction (pt 1464 -1976))
+(junction (pt -240 -2176))

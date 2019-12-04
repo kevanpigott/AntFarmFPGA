@@ -1,5 +1,5 @@
 Analysis & Synthesis report for antfarm
-Tue Dec 03 13:40:54 2019
+Wed Dec 04 08:58:16 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -67,13 +67,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec 03 13:40:54 2019           ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 04 08:58:16 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; antfarm                                         ;
 ; Top-level Entity Name              ; antfarm                                         ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 5,055                                           ;
-;     Total combinational functions  ; 4,941                                           ;
+; Total logic elements               ; 5,051                                           ;
+;     Total combinational functions  ; 4,937                                           ;
 ;     Dedicated logic registers      ; 344                                             ;
 ; Total registers                    ; 344                                             ;
 ; Total pins                         ; 74                                              ;
@@ -216,16 +216,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+------------------+
 ; Resource                                    ; Usage            ;
 +---------------------------------------------+------------------+
-; Estimated Total logic elements              ; 5,055            ;
+; Estimated Total logic elements              ; 5,051            ;
 ;                                             ;                  ;
-; Total combinational functions               ; 4941             ;
+; Total combinational functions               ; 4937             ;
 ; Logic element usage by number of LUT inputs ;                  ;
-;     -- 4 input functions                    ; 2412             ;
-;     -- 3 input functions                    ; 1105             ;
-;     -- <=2 input functions                  ; 1424             ;
+;     -- 4 input functions                    ; 2405             ;
+;     -- 3 input functions                    ; 1109             ;
+;     -- <=2 input functions                  ; 1423             ;
 ;                                             ;                  ;
 ; Logic elements by mode                      ;                  ;
-;     -- normal mode                          ; 4118             ;
+;     -- normal mode                          ; 4114             ;
 ;     -- arithmetic mode                      ; 823              ;
 ;                                             ;                  ;
 ; Total registers                             ; 344              ;
@@ -236,7 +236,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0                ;
 ; Maximum fan-out node                        ; clkdiv:inst8|out ;
 ; Maximum fan-out                             ; 207              ;
-; Total fan-out                               ; 16494            ;
+; Total fan-out                               ; 16476            ;
 ; Average fan-out                             ; 3.08             ;
 +---------------------------------------------+------------------+
 
@@ -246,19 +246,19 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                     ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |antfarm                                     ; 4941 (0)          ; 344 (0)      ; 0           ; 0            ; 0       ; 0         ; 74   ; 0            ; |antfarm                                                                                                                                                ; work         ;
+; |antfarm                                     ; 4937 (0)          ; 344 (0)      ; 0           ; 0            ; 0       ; 0         ; 74   ; 0            ; |antfarm                                                                                                                                                ; work         ;
 ;    |blockV2:inst2|                           ; 301 (301)         ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|blockV2:inst2                                                                                                                                  ; work         ;
 ;    |blockV2:inst3|                           ; 357 (357)         ; 45 (45)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|blockV2:inst3                                                                                                                                  ; work         ;
 ;    |blockV2:inst4|                           ; 353 (353)         ; 42 (42)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|blockV2:inst4                                                                                                                                  ; work         ;
-;    |blockV2:inst5|                           ; 303 (303)         ; 28 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|blockV2:inst5                                                                                                                                  ; work         ;
-;    |blockV2:inst6|                           ; 306 (306)         ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|blockV2:inst6                                                                                                                                  ; work         ;
+;    |blockV2:inst5|                           ; 304 (304)         ; 28 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|blockV2:inst5                                                                                                                                  ; work         ;
+;    |blockV2:inst6|                           ; 305 (305)         ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|blockV2:inst6                                                                                                                                  ; work         ;
 ;    |blockV2:inst7|                           ; 313 (313)         ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|blockV2:inst7                                                                                                                                  ; work         ;
 ;    |clkdiv:inst8|                            ; 2625 (89)         ; 66 (66)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|clkdiv:inst8                                                                                                                                   ; work         ;
 ;       |lpm_divide:Mod0|                      ; 2536 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|clkdiv:inst8|lpm_divide:Mod0                                                                                                                   ; work         ;
 ;          |lpm_divide_c8m:auto_generated|     ; 2536 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|clkdiv:inst8|lpm_divide:Mod0|lpm_divide_c8m:auto_generated                                                                                     ; work         ;
 ;             |sign_div_unsign_jnh:divider|    ; 2536 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|clkdiv:inst8|lpm_divide:Mod0|lpm_divide_c8m:auto_generated|sign_div_unsign_jnh:divider                                                         ; work         ;
 ;                |alt_u_div_86f:divider|       ; 2536 (2536)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|clkdiv:inst8|lpm_divide:Mod0|lpm_divide_c8m:auto_generated|sign_div_unsign_jnh:divider|alt_u_div_86f:divider                                   ; work         ;
-;    |matrixEncoder:inst9|                     ; 28 (28)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|matrixEncoder:inst9                                                                                                                            ; work         ;
+;    |matrixEncoder:inst9|                     ; 24 (24)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|matrixEncoder:inst9                                                                                                                            ; work         ;
 ;    |probe:inst|                              ; 258 (62)          ; 28 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|probe:inst                                                                                                                                     ; work         ;
 ;       |display:inst_11|                      ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|probe:inst|display:inst_11                                                                                                                     ; work         ;
 ;       |display:inst_12|                      ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|probe:inst|display:inst_12                                                                                                                     ; work         ;
@@ -536,12 +536,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |antfarm|matrixEncoder:inst9|storeSel[2]         ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |antfarm|vga:inst1|vga640x480:display|h_count[8] ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |antfarm|vga:inst1|vga640x480:display|h_count[9] ;
 ; 6:1                ; 14 bits   ; 56 LEs        ; 28 LEs               ; 28 LEs                 ; Yes        ; |antfarm|probe:inst|outHundreds[4]               ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |antfarm|vga:inst1|vga640x480:display|v_count[8] ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |antfarm|vga:inst1|vga640x480:display|v_count[4] ;
 ; 10:1               ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |antfarm|probe:inst|outOnes[0]                   ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |antfarm|probe:inst|outHundreds[3]               ;
-; 257:1              ; 2 bits    ; 342 LEs       ; 2 LEs                ; 340 LEs                ; Yes        ; |antfarm|blockV2:inst6|blocktype[2]              ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |antfarm|probe:inst|outTens[3]                   ;
+; 257:1              ; 2 bits    ; 342 LEs       ; 2 LEs                ; 340 LEs                ; Yes        ; |antfarm|blockV2:inst6|blocktype[1]              ;
 ; 257:1              ; 2 bits    ; 342 LEs       ; 2 LEs                ; 340 LEs                ; Yes        ; |antfarm|blockV2:inst7|blocktype[2]              ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst4|Mux0                      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|blockV2:inst4|Mux0                      ;
@@ -2037,7 +2037,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:15     ;
+; Top            ; 00:00:16     ;
 +----------------+--------------+
 
 
@@ -2047,7 +2047,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Dec 03 13:40:36 2019
+    Info: Processing started: Wed Dec 04 08:57:56 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off antfarm -c antfarm
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Warning (10463): Verilog HDL Declaration warning at block.v(6): "type" is SystemVerilog-2005 keyword
@@ -2223,14 +2223,14 @@ Warning (21074): Design contains 6 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "setinputs[5]"
     Warning (15610): No output dependent on input pin "setinputs[4]"
     Warning (15610): No output dependent on input pin "clkKey"
-Info (21057): Implemented 5132 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 5128 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 60 output pins
-    Info (21061): Implemented 5058 logic cells
+    Info (21061): Implemented 5054 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 82 warnings
-    Info: Peak virtual memory: 4660 megabytes
-    Info: Processing ended: Tue Dec 03 13:40:54 2019
-    Info: Elapsed time: 00:00:18
+    Info: Peak virtual memory: 4663 megabytes
+    Info: Processing ended: Wed Dec 04 08:58:16 2019
+    Info: Elapsed time: 00:00:20
     Info: Total CPU time (on all processors): 00:00:18
 
 
