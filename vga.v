@@ -124,6 +124,58 @@ sq_block50,sq_block51,sq_block52	; //areas of color
     always @(posedge CLK)
 	 begin 
         {pix_stb, cnt} <= cnt + 16'h8000;  // divide by 4: (2^16)/4 = 0x4000	
+		  VGA_R[3] = sq_block1;
+		  VGA_R[3] = sq_block2;
+		  VGA_R[3] = sq_block3;
+		  VGA_R[3] = sq_block4;
+		  VGA_R[3] = sq_block5;
+		  VGA_R[3] = sq_block6;
+		  VGA_R[3] = sq_block7;
+		  VGA_R[3] = sq_block8;
+		  VGA_R[3] = sq_block9;
+		  VGA_R[3] = sq_block10;
+		  VGA_R[3] = sq_block11;
+		  VGA_R[3] = sq_block12;
+		  VGA_R[3] = sq_block13;
+		  VGA_R[3] = sq_block14;
+		  VGA_R[3] = sq_block15;
+		  VGA_R[3] = sq_block16;
+		  VGA_R[3] = sq_block17;
+		  VGA_R[3] = sq_block18;
+		  VGA_R[3] = sq_block19;
+		  VGA_R[3] = sq_block20;
+		  VGA_R[3] = sq_block21;
+		  VGA_R[3] = sq_block22;
+		  VGA_R[3] = sq_block23;
+		  VGA_R[3] = sq_block24;
+		  VGA_R[3] = sq_block25;
+		  VGA_R[3] = sq_block26;
+		  VGA_R[3] = sq_block27;
+		  VGA_R[3] = sq_block28;
+		  VGA_R[3] = sq_block29;
+		  VGA_R[3] = sq_block30;
+		  VGA_R[3] = sq_block31;
+		  VGA_R[3] = sq_block32;
+		  VGA_R[3] = sq_block33;
+		  VGA_R[3] = sq_block34;
+		  VGA_R[3] = sq_block35;
+		  VGA_R[3] = sq_block36;
+		  VGA_R[3] = sq_block37;
+		  VGA_R[3] = sq_block38;
+		  VGA_R[3] = sq_block39;
+		  VGA_R[3] = sq_block40;
+			VGA_R[3] = sq_block41;
+			VGA_R[3] = sq_block42;
+			VGA_R[3] = sq_block43;
+			VGA_R[3] = sq_block44;
+			VGA_R[3] = sq_block45;
+			VGA_R[3] = sq_block46;
+			VGA_R[3] = sq_block47;
+			VGA_R[3] = sq_block48;
+			VGA_R[3] = sq_block49;
+			VGA_R[3] = sq_block50;
+			VGA_R[3] = sq_block51;
+			VGA_R[3] = sq_block52;		  
 		case(sqSwitch)
 		6'b000000:
 		begin
