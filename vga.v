@@ -28,91 +28,90 @@ sq_block50,sq_block51,sq_block52	; //areas of color
 	 
 	     assign sq_sky = ((x > 0) & (y < 280) & (x < 640) & (y > 0)) ? 1 : 0;
 
-	 
 //row 1
-	 assign sq_block1 = ((x > 0) & (y > 430) & (x < 50) & (y < 480)) ? 1 : 0;
-	 assign sq_block2 = ((x > 50) & (y > 430) & (x < 100) & (y < 480)) ? 1 : 0;
 	 
-    assign sq_block3 = ((x > 100) & (y > 430) & (x < 150) & (y < 480)) ? 1 : 0;
-    assign sq_block4 = ((x > 150) & (y > 430) & (x < 200) & (y < 480)) ? 1 : 0;
+	 assign sq_block1 = ((x > 0) & (y > 430) & (x < 50) & (y < 480)) ;
+	 assign sq_block2 = ((x > 50) & (y > 430) & (x < 100) & (y < 480)) ;
 	 
-	 assign sq_block5 = ((x > 200) & (y > 430) & (x < 250) & (y < 480)) ? 1 : 0;
-	 assign sq_block6 = ((x > 250) & (y > 430) & (x < 300) & (y < 480)) ? 1 : 0;
+    assign sq_block3 = ((x > 100) & (y > 430) & (x < 150) & (y < 480)) ;
+    assign sq_block4 = ((x > 150) & (y > 430) & (x < 200) & (y < 480)) ;
 	 
-	 assign sq_block7 = ((x > 300) & (y > 430) & (x < 350) & (y < 480)) ? 1 : 0;
-	 assign sq_block8 = ((x > 350) & (y > 430) & (x < 400) & (y < 480)) ? 1 : 0;
+	 assign sq_block5 = ((x > 200) & (y > 430) & (x < 250) & (y < 480)) ;
+	 assign sq_block6 = ((x > 250) & (y > 430) & (x < 300) & (y < 480)) ;
 	 
-    assign sq_block9 = ((x > 400) & (y > 430) & (x < 450) & (y < 480)) ? 1 : 0;
-    assign sq_block10 = ((x > 450) & (y > 430) & (x < 500) & (y < 480)) ? 1 : 0;
+	 assign sq_block7 = ((x > 300) & (y > 430) & (x < 350) & (y < 480)) ;
+	 assign sq_block8 = ((x > 350) & (y > 430) & (x < 400) & (y < 480)) ;
 	 
-	 assign sq_block11 = ((x > 500) & (y > 430) & (x < 550) & (y < 480)) ? 1 : 0;
-	 assign sq_block12 = ((x > 550) & (y > 430) & (x < 600) & (y < 480)) ? 1 : 0;
+    assign sq_block9 = ((x > 400) & (y > 430) & (x < 450) & (y < 480)) ;
+    assign sq_block10 = ((x > 450) & (y > 430) & (x < 500) & (y < 480)) ;
 	 
-	 assign sq_block13 = ((x > 600) & (y > 430) & (x < 640) & (y < 480)) ? 1 : 0;
+	 assign sq_block11 = ((x > 500) & (y > 430) & (x < 550) & (y < 480)) ;
+	 assign sq_block12 = ((x > 550) & (y > 430) & (x < 600) & (y < 480)) ;
+	 
+	 assign sq_block13 = ((x > 600) & (y > 430) & (x < 640) & (y < 480)) ;
 	 
 //row 2
-    assign sq_block14 = ((x > 0) & (y > 380) & (x < 50) & (y < 430)) ? 1 : 0;
-	 assign sq_block15 = ((x > 50) & (y > 380) & (x < 100) & (y < 430)) ? 1 : 0;
+    assign sq_block14 = ((x > 0) & (y > 380) & (x < 50) & (y < 430)) ;
+	 assign sq_block15 = ((x > 50) & (y > 380) & (x < 100) & (y < 430)) ;
 	 
-    assign sq_block16 = ((x > 100) & (y > 380) & (x < 150) & (y < 430)) ? 1 : 0;
-    assign sq_block17 = ((x > 150) & (y > 380) & (x < 200) & (y < 430)) ? 1 : 0;
+    assign sq_block16 = ((x > 100) & (y > 380) & (x < 150) & (y < 430)) ;
+    assign sq_block17 = ((x > 150) & (y > 380) & (x < 200) & (y < 430)) ;
 	 
-	 assign sq_block18 = ((x > 200) & (y > 380) & (x < 250) & (y < 430)) ? 1 : 0;
-	 assign sq_block19 = ((x > 250) & (y > 380) & (x < 300) & (y < 430)) ? 1 : 0;
+	 assign sq_block18 = ((x > 200) & (y > 380) & (x < 250) & (y < 430)) ;
+	 assign sq_block19 = ((x > 250) & (y > 380) & (x < 300) & (y < 430)) ;
 	 
-	 assign sq_block20 = ((x > 300) & (y > 380) & (x < 350) & (y < 430)) ? 1 : 0;
-	 assign sq_block21 = ((x > 350) & (y > 380) & (x < 400) & (y < 430)) ? 1 : 0;
+	 assign sq_block20 = ((x > 300) & (y > 380) & (x < 350) & (y < 430)) ;
+	 assign sq_block21 = ((x > 350) & (y > 380) & (x < 400) & (y < 430)) ;
 	 
-    assign sq_block22 = ((x > 400) & (y > 380) & (x < 450) & (y < 430)) ? 1 : 0;
-    assign sq_block23 = ((x > 450) & (y > 380) & (x < 500) & (y < 430)) ? 1 : 0;
+    assign sq_block22 = ((x > 400) & (y > 380) & (x < 450) & (y < 430)) ;
+    assign sq_block23 = ((x > 450) & (y > 380) & (x < 500) & (y < 430)) ;
 	 
-	 assign sq_block24 = ((x > 500) & (y > 380) & (x < 550) & (y < 430)) ? 1 : 0;
-	 assign sq_block25 = ((x > 550) & (y > 380) & (x < 600) & (y < 430)) ? 1 : 0;
+	 assign sq_block24 = ((x > 500) & (y > 380) & (x < 550) & (y < 430)) ;
+	 assign sq_block25 = ((x > 550) & (y > 380) & (x < 600) & (y < 430)) ;
 	 
-	 assign sq_block26 = ((x > 600) & (y > 380) & (x < 640) & (y < 430)) ? 1 : 0;
+	 assign sq_block26 = ((x > 600) & (y > 380) & (x < 640) & (y < 430)) ;
 	
 //row 3
-    assign sq_block27 = ((x > 0) & (y > 330) & (x < 50) & (y < 380)) ? 1 : 0;
-	 assign sq_block28 = ((x > 50) & (y > 330) & (x < 100) & (y < 380)) ? 1 : 0;
+    assign sq_block27 = ((x > 0) & (y > 330) & (x < 50) & (y < 380)) ;
+	 assign sq_block28 = ((x > 50) & (y > 330) & (x < 100) & (y < 380)) ;
 	 
-    assign sq_block29= ((x > 100) & (y > 330) & (x < 150) & (y < 380)) ? 1 : 0;
-    assign sq_block30 = ((x > 150) & (y > 330) & (x < 200) & (y < 380)) ? 1 : 0;
+    assign sq_block29= ((x > 100) & (y > 330) & (x < 150) & (y < 380)) ;
+    assign sq_block30 = ((x > 150) & (y > 330) & (x < 200) & (y < 380)) ;
 	 
-	 assign sq_block31 = ((x > 200) & (y > 330) & (x < 250) & (y < 380)) ? 1 : 0;
-	 assign sq_block32 = ((x > 250) & (y > 330) & (x < 300) & (y < 380)) ? 1 : 0;
+	 assign sq_block31 = ((x > 200) & (y > 330) & (x < 250) & (y < 380)) ;
+	 assign sq_block32 = ((x > 250) & (y > 330) & (x < 300) & (y < 380)) ;
 	 
-	 assign sq_block33 = ((x > 300) & (y > 330) & (x < 350) & (y < 380)) ? 1 : 0;
-	 assign sq_block34 = ((x > 350) & (y > 330) & (x < 400) & (y < 380)) ? 1 : 0;
+	 assign sq_block33 = ((x > 300) & (y > 330) & (x < 350) & (y < 380)) ;
+	 assign sq_block34 = ((x > 350) & (y > 330) & (x < 400) & (y < 380)) ;
 	 
-    assign sq_block35 = ((x > 400) & (y > 330) & (x < 450) & (y < 380)) ? 1 : 0;
-    assign sq_block36 = ((x > 450) & (y > 330) & (x < 500) & (y < 380)) ? 1 : 0;
+    assign sq_block35 = ((x > 400) & (y > 330) & (x < 450) & (y < 380)) ;
+    assign sq_block36 = ((x > 450) & (y > 330) & (x < 500) & (y < 380)) ;
 	 
-	 assign sq_block37 = ((x > 500) & (y > 330) & (x < 550) & (y < 380)) ? 1 : 0;
-	 assign sq_block38 = ((x > 550) & (y > 330) & (x < 600) & (y < 380)) ? 1 : 0;
+	 assign sq_block37 = ((x > 500) & (y > 330) & (x < 550) & (y < 380)) ;
+	 assign sq_block38 = ((x > 550) & (y > 330) & (x < 600) & (y < 380)) ;
 	 
-	 assign sq_block39 = ((x > 600) & (y > 330) & (x < 640) & (y < 380)) ? 1 : 0;	
+	 assign sq_block39 = ((x > 600) & (y > 330) & (x < 640) & (y < 380)) ;	
 	 
 //row 4
-    assign sq_block40 = ((x > 0) & (y > 280) & (x < 50) & (y < 330)) ? 1 : 0;
-	 assign sq_block41 = ((x > 50) & (y > 280) & (x < 100) & (y < 330)) ? 1 : 0;
+    assign sq_block40 = ((x > 0) & (y > 280) & (x < 50) & (y < 330)) ;
+	 assign sq_block41 = ((x > 50) & (y > 280) & (x < 100) & (y < 330)) ;
 	 
-    assign sq_block42 = ((x > 100) & (y > 280) & (x < 150) & (y < 330)) ? 1 : 0;
-    assign sq_block43 = ((x > 150) & (y > 280) & (x < 200) & (y < 330)) ? 1 : 0;
+    assign sq_block42 = ((x > 100) & (y > 280) & (x < 150) & (y < 330)) ;
+    assign sq_block43 = ((x > 150) & (y > 280) & (x < 200) & (y < 330)) ;
 	 
-	 assign sq_block44 = ((x > 200) & (y > 280) & (x < 250) & (y < 330)) ? 1 : 0;
-	 assign sq_block45 = ((x > 250) & (y > 280) & (x < 300) & (y < 330)) ? 1 : 0;
+	 assign sq_block44 = ((x > 200) & (y > 280) & (x < 250) & (y < 330)) ;
+	 assign sq_block45 = ((x > 250) & (y > 280) & (x < 300) & (y < 330)) ;
 	 
-	 assign sq_block46 = ((x > 300) & (y > 280) & (x < 350) & (y < 330)) ? 1 : 0;
-	 assign sq_block47 = ((x > 350) & (y > 280) & (x < 400) & (y < 330)) ? 1 : 0;
+	 assign sq_block46 = ((x > 300) & (y > 280) & (x < 350) & (y < 330)) ;
+	 assign sq_block47 = ((x > 350) & (y > 280) & (x < 400) & (y < 330)) ;
 	 
-    assign sq_block48 = ((x > 400) & (y > 280) & (x < 450) & (y < 330)) ? 1 : 0;
-    assign sq_block49 = ((x > 450) & (y > 280) & (x < 500) & (y < 330)) ? 1 : 0;
+    assign sq_block48 = ((x > 400) & (y > 280) & (x < 450) & (y < 330)) ;
+    assign sq_block49 = ((x > 450) & (y > 280) & (x < 500) & (y < 330)) ;
 	 
-	 assign sq_block50 = ((x > 500) & (y > 280) & (x < 550) & (y < 330)) ? 1 : 0;
-	 assign sq_block51 = ((x > 550) & (y > 280) & (x < 600) & (y < 330)) ? 1 : 0;
+	 assign sq_block50 = ((x > 500) & (y > 280) & (x < 550) & (y < 330)) ;
+	 assign sq_block51 = ((x > 550) & (y > 280) & (x < 600) & (y < 330)) ;
 	 
-	 assign sq_block52 = ((x > 600) & (y > 280) & (x < 640) & (y < 330)) ? 1 : 0;
-
+	 assign sq_block52 = ((x > 600) & (y > 280) & (x < 640) & (y < 330)) ;
 	 
 	 
     wire rst = ~RST_BTN;    // reset is active low on Arty & Nexys Video
@@ -137,6 +136,7 @@ sq_block50,sq_block51,sq_block52	; //areas of color
 			end
 			3'b001:
 			begin 
+				
 				 VGA_B[3] = sq_block1;
 				 VGA_R[3] = sq_block1; //white
 				 VGA_G[3] = sq_block1;

@@ -268,7 +268,7 @@ GND*                         : G21       :        :                   :         
 GND*                         : G22       :        :                   :         : 5         :                
 hexoutA[3]                   : H1        : output : 3.3-V LVTTL       :         : 2         : Y              
 hexoutA[2]                   : H2        : output : 3.3-V LVTTL       :         : 2         : Y              
-GND*                         : H3        :        :                   :         : 2         :                
+GLED[8]                      : H3        : output : 3.3-V LVTTL       :         : 2         : N              
 hexoutB[3]                   : H4        : output : 3.3-V LVTTL       :         : 2         : Y              
 hexoutB[2]                   : H5        : output : 3.3-V LVTTL       :         : 2         : Y              
 hexoutB[1]                   : H6        : output : 3.3-V LVTTL       :         : 2         : Y              
@@ -430,7 +430,7 @@ GND*                         : R7        :        :                   :         
 GND*                         : R8        :        :                   :         : 1         :                
 GND*                         : R9        :        :                   :         : 8         :                
 GND*                         : R10       :        :                   :         : 8         :                
-GLED[8]                      : R11       : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : R11       :        :                   :         : 8         :                
 GND*                         : R12       :        :                   :         : 7         :                
 GND*                         : R13       :        :                   :         : 7         :                
 GND*                         : R14       :        :                   :         : 7         :                

@@ -1,0 +1,307 @@
+module ColRam2Mat(clk,inA,inB,inC,inD,inE,inF,inG,inH,inI,inJ,inK,inM,outCol,outSel);
+input clk;
+
+output reg [5:0]outSel;
+output reg [2:0] outCol;
+
+input [11:0]inA;
+input [11:0]inB;
+input [11:0]inC;
+input [11:0]inD;
+input [11:0]inE;
+input [11:0]inF;
+input [11:0]inG;
+input [11:0]inH;
+input [11:0]inI;
+input [11:0]inJ;
+input [11:0]inK;
+input [11:0]inL;
+input [11:0]inM;
+
+reg [5:0]selStore;
+reg [2:0]colStore;
+
+
+always@(posedge clk) begin
+			selStore<=0;
+			colStore<=inA[2:0];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inB[2:0];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inC[2:0];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inD[2:0];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inE[2:0];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inF[2:0];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inG[2:0];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inH[2:0];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inI[2:0];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inA[2:0];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inJ[2:0];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inK[2:0];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inL[2:0];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inM[2:0];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inA[5:3];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inB[5:3];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inC[5:3];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inD[5:3];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inE[5:3];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inF[5:3];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inG[5:3];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inH[5:3];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inI[5:3];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inA[5:3];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inJ[5:3];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inK[5:3];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inL[5:3];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inM[5:3];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+
+			colStore<=inA[8:6];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inB[8:6];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inC[8:6];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inD[8:6];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inE[8:6];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inF[8:6];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inG[8:6];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inH[8:6];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inI[8:6];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inA[8:6];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inJ[8:6];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inK[8:6];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inL[8:6];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inM[8:6];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inA[11:9];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inB[11:9];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inC[11:9];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inD[11:9];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inE[11:9];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inF[11:9];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inG[11:9];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inH[11:9];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inI[11:9];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inA[11:9];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inJ[11:9];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inK[11:9];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inL[11:9];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+			
+			colStore<=inM[11:9];
+			outSel<=selStore;
+			outCol<=colStore;
+			selStore<=selStore+1;
+		end
+endmodule

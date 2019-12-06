@@ -10,12 +10,12 @@ input [4:0]OO;
 input [4:0]tZ;
 input [4:0]tO;
 
-output reg [2:0]outSel;
+output reg [5:0]outSel;
 output reg [2:0]outCol;
 
 reg [2:0] CS;
 reg [2:0] NS;
-reg [2:0] storeSel;
+reg [5:0] storeSel;
 reg [2:0] storeCol;
 parameter empty=3'd0, air=3'd1, dirt=3'd2, ground=3'd3, queen=3'd4, wall=3'd5, errorblock=3'd6, tunnel=3'd7;
 
@@ -27,7 +27,8 @@ always@(posedge clk)begin
 	case({CS})
 		3'd0:
 			begin
-				storeSel<=3'd0;
+				//storeSel<=3'd0;
+				outSel<=storeSel;
 				if(ZZ[4]==1'b1)begin//sugar
 					storeCol<=3'd1;
 				end else if(ZZ[3]==1'b1)begin//ant

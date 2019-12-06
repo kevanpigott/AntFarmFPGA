@@ -1,0 +1,18 @@
+module ColumnRAM(inSelW,inColW,outRead);
+
+input [2:0]inSelW;
+input [2:0]inColW;
+reg [11:0]store;
+output reg[11:0]outRead;
+
+always@(*)begin
+	case({inSelW})
+		3'd0:store[2:0]<=inColW;
+		3'd1:store[5:3]<=inColW;
+		3'd2:store[8:6]<=inColW;
+		3'd3:store[11:9]<=inColW;
+		default:store<=12'hffffff;
+	endcase
+end
+endmodule
+

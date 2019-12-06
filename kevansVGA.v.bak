@@ -1,0 +1,30 @@
+module kevansVGA(clk,rst_btn,rst,hsync,vsync,col,row,update,write,R,G,B,VGA_R,VGA_G,VGA_B);
+
+input clk,rst_btn,rst,update,write;
+
+input [3:0]col;
+input [2:0]row;
+input [1:0]R;
+input [1:0]G;
+input [1:0]B;
+
+output wire hsync;
+output wire vsync;
+
+output reg [3:0] VGA_R;    // 4-bit VGA red output
+output reg [3:0] VGA_G;
+output reg [3:0] VGA_B;  
+
+wire [9:0] x;  // current pixel x position: 10-bit value: 0-1023
+wire [8:0] y;  // current pixel y position:  9-bit value: 0-511
+
+//pixel clock
+reg [15:0] cnt;
+
+reg pix_stb;
+
+vga640x480 display (.i_clk(CLK),.i_pix_stb(pix_stb),.i_rst(rst),.o_hs(VGA_HS_O),.o_vs(VGA_VS_O),.o_x(x),.o_y(y));
+
+always @(posedge CLK) begin 
+    {pix_stb, cnt} <= cnt + 16'h8000;  // divide by 4: (2^16)/4 = 0x4000	
+end

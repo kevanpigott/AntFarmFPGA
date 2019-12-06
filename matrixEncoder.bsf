@@ -75,8 +75,8 @@ applicable agreement for further details.
 	(port
 		(pt 184 32)
 		(output)
-		(text "outSel[2..0]" (rect 0 0 43 12)(font "Arial" ))
-		(text "outSel[2..0]" (rect 120 27 163 39)(font "Arial" ))
+		(text "outSel[5..0]" (rect 0 0 43 12)(font "Arial" ))
+		(text "outSel[5..0]" (rect 120 27 163 39)(font "Arial" ))
 		(line (pt 184 32)(pt 168 32)(line_width 3))
 	)
 	(port
