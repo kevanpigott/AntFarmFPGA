@@ -4,7 +4,7 @@ FPGA antfarm designed in quartus for cyclone IV
 <h1>FPGA Antfarm</h1>
 <h3>Overview:</h3>
 
-	For our final project, we decided to design a virtual ant farm. Similar to Conway’s game of life and Langton’s ant, the game board 
+For our final project, we decided to design a virtual ant farm. Similar to Conway’s game of life and Langton’s ant, the game board 
   is an interconnected matrix of blocks, each of which independently make decisions based on its surrounds.  
   Given a set of conditions and operations, the end result will be a satisfying time-lapse of multiple ants terraforming the ground, 
   digging tunnels, and searching for food to return to the colony in order to create more ants. 
