@@ -1,5 +1,5 @@
 Analysis & Synthesis report for antfarm
-Fri Dec 13 13:35:26 2019
+Fri Dec 13 15:29:33 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -438,15 +438,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 13 13:35:25 2019           ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 13 15:29:32 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; antfarm                                         ;
 ; Top-level Entity Name              ; antfarm                                         ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 17,211                                          ;
-;     Total combinational functions  ; 16,834                                          ;
-;     Dedicated logic registers      ; 886                                             ;
-; Total registers                    ; 886                                             ;
+; Total logic elements               ; 17,265                                          ;
+;     Total combinational functions  ; 16,878                                          ;
+;     Dedicated logic registers      ; 901                                             ;
+; Total registers                    ; 901                                             ;
 ; Total pins                         ; 70                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -629,28 +629,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                                                                              ;
 +---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 17,211                                                                                                                                             ;
+; Estimated Total logic elements              ; 17,265                                                                                                                                             ;
 ;                                             ;                                                                                                                                                    ;
-; Total combinational functions               ; 16834                                                                                                                                              ;
+; Total combinational functions               ; 16878                                                                                                                                              ;
 ; Logic element usage by number of LUT inputs ;                                                                                                                                                    ;
-;     -- 4 input functions                    ; 7490                                                                                                                                               ;
-;     -- 3 input functions                    ; 6058                                                                                                                                               ;
-;     -- <=2 input functions                  ; 3286                                                                                                                                               ;
+;     -- 4 input functions                    ; 7487                                                                                                                                               ;
+;     -- 3 input functions                    ; 6065                                                                                                                                               ;
+;     -- <=2 input functions                  ; 3326                                                                                                                                               ;
 ;                                             ;                                                                                                                                                    ;
 ; Logic elements by mode                      ;                                                                                                                                                    ;
-;     -- normal mode                          ; 11240                                                                                                                                              ;
+;     -- normal mode                          ; 11284                                                                                                                                              ;
 ;     -- arithmetic mode                      ; 5594                                                                                                                                               ;
 ;                                             ;                                                                                                                                                    ;
-; Total registers                             ; 886                                                                                                                                                ;
-;     -- Dedicated logic registers            ; 886                                                                                                                                                ;
+; Total registers                             ; 901                                                                                                                                                ;
+;     -- Dedicated logic registers            ; 901                                                                                                                                                ;
 ;     -- I/O registers                        ; 0                                                                                                                                                  ;
 ;                                             ;                                                                                                                                                    ;
 ; I/O pins                                    ; 70                                                                                                                                                 ;
 ; Embedded Multiplier 9-bit elements          ; 52                                                                                                                                                 ;
 ; Maximum fan-out node                        ; kevansVGA:inst3|lpm_mult:Mult126|mult_pat:auto_generated|alt_mac_mult:mac_mult3|mac_mult_0pg1:auto_generated|mult_okl:mult1|~QUARTUS_CREATED_GND~I ;
 ; Maximum fan-out                             ; 2638                                                                                                                                               ;
-; Total fan-out                               ; 54296                                                                                                                                              ;
-; Average fan-out                             ; 3.04                                                                                                                                               ;
+; Total fan-out                               ; 54421                                                                                                                                              ;
+; Average fan-out                             ; 3.03                                                                                                                                               ;
 +---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -659,38 +659,38 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                  ; Library Name ;
 +-----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |antfarm                                      ; 16834 (1)         ; 886 (0)      ; 0           ; 52           ; 0       ; 26        ; 70   ; 0            ; |antfarm                                                                                                                             ; work         ;
-;    |EnterTheMAtrix:inst4|                     ; 8016 (0)          ; 780 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4                                                                                                        ; work         ;
-;       |blockV2:inst11|                        ; 347 (347)         ; 36 (36)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst11                                                                                         ; work         ;
-;       |blockV2:inst12|                        ; 380 (380)         ; 39 (39)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst12                                                                                         ; work         ;
-;       |blockV2:inst13|                        ; 377 (377)         ; 41 (41)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst13                                                                                         ; work         ;
-;       |blockV2:inst14|                        ; 338 (338)         ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst14                                                                                         ; work         ;
-;       |blockV2:inst18|                        ; 346 (346)         ; 34 (34)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst18                                                                                         ; work         ;
-;       |blockV2:inst19|                        ; 372 (372)         ; 37 (37)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst19                                                                                         ; work         ;
-;       |blockV2:inst20|                        ; 377 (377)         ; 39 (39)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst20                                                                                         ; work         ;
-;       |blockV2:inst21|                        ; 337 (337)         ; 31 (31)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst21                                                                                         ; work         ;
-;       |blockV2:inst25|                        ; 344 (344)         ; 34 (34)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst25                                                                                         ; work         ;
-;       |blockV2:inst26|                        ; 382 (382)         ; 38 (38)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst26                                                                                         ; work         ;
+; |antfarm                                      ; 16878 (1)         ; 901 (0)      ; 0           ; 52           ; 0       ; 26        ; 70   ; 0            ; |antfarm                                                                                                                             ; work         ;
+;    |EnterTheMAtrix:inst4|                     ; 8056 (0)          ; 795 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4                                                                                                        ; work         ;
+;       |blockV2:inst11|                        ; 335 (335)         ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst11                                                                                         ; work         ;
+;       |blockV2:inst12|                        ; 380 (380)         ; 42 (42)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst12                                                                                         ; work         ;
+;       |blockV2:inst13|                        ; 382 (382)         ; 41 (41)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst13                                                                                         ; work         ;
+;       |blockV2:inst14|                        ; 354 (354)         ; 35 (35)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst14                                                                                         ; work         ;
+;       |blockV2:inst18|                        ; 333 (333)         ; 31 (31)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst18                                                                                         ; work         ;
+;       |blockV2:inst19|                        ; 379 (379)         ; 39 (39)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst19                                                                                         ; work         ;
+;       |blockV2:inst20|                        ; 381 (381)         ; 39 (39)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst20                                                                                         ; work         ;
+;       |blockV2:inst21|                        ; 355 (355)         ; 34 (34)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst21                                                                                         ; work         ;
+;       |blockV2:inst25|                        ; 332 (332)         ; 31 (31)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst25                                                                                         ; work         ;
+;       |blockV2:inst26|                        ; 376 (376)         ; 39 (39)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst26                                                                                         ; work         ;
 ;       |blockV2:inst27|                        ; 379 (379)         ; 39 (39)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst27                                                                                         ; work         ;
-;       |blockV2:inst28|                        ; 338 (338)         ; 31 (31)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst28                                                                                         ; work         ;
-;       |blockV2:inst32|                        ; 294 (294)         ; 29 (29)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst32                                                                                         ; work         ;
-;       |blockV2:inst33|                        ; 378 (378)         ; 39 (39)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst33                                                                                         ; work         ;
-;       |blockV2:inst34|                        ; 376 (376)         ; 39 (39)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst34                                                                                         ; work         ;
-;       |blockV2:inst35|                        ; 339 (339)         ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst35                                                                                         ; work         ;
-;       |blockV2:inst37|                        ; 297 (297)         ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst37                                                                                         ; work         ;
-;       |blockV2:inst38|                        ; 381 (381)         ; 38 (38)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst38                                                                                         ; work         ;
-;       |blockV2:inst39|                        ; 301 (301)         ; 29 (29)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst39                                                                                         ; work         ;
-;       |blockV2:inst4|                         ; 318 (318)         ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst4                                                                                          ; work         ;
-;       |blockV2:inst5|                         ; 337 (337)         ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst5                                                                                          ; work         ;
-;       |blockV2:inst6|                         ; 377 (377)         ; 39 (39)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst6                                                                                          ; work         ;
-;       |blockV2:inst7|                         ; 301 (301)         ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst7                                                                                          ; work         ;
+;       |blockV2:inst28|                        ; 354 (354)         ; 34 (34)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst28                                                                                         ; work         ;
+;       |blockV2:inst32|                        ; 299 (299)         ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst32                                                                                         ; work         ;
+;       |blockV2:inst33|                        ; 376 (376)         ; 41 (41)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst33                                                                                         ; work         ;
+;       |blockV2:inst34|                        ; 378 (378)         ; 39 (39)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst34                                                                                         ; work         ;
+;       |blockV2:inst35|                        ; 353 (353)         ; 34 (34)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst35                                                                                         ; work         ;
+;       |blockV2:inst37|                        ; 297 (297)         ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst37                                                                                         ; work         ;
+;       |blockV2:inst38|                        ; 378 (378)         ; 38 (38)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst38                                                                                         ; work         ;
+;       |blockV2:inst39|                        ; 293 (293)         ; 29 (29)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst39                                                                                         ; work         ;
+;       |blockV2:inst4|                         ; 308 (308)         ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst4                                                                                          ; work         ;
+;       |blockV2:inst5|                         ; 336 (336)         ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst5                                                                                          ; work         ;
+;       |blockV2:inst6|                         ; 382 (382)         ; 41 (41)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst6                                                                                          ; work         ;
+;       |blockV2:inst7|                         ; 316 (316)         ; 28 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst7                                                                                          ; work         ;
 ;    |clk_div_by_four:inst7|                    ; 6 (6)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|clk_div_by_four:inst7                                                                                                       ; work         ;
 ;    |clkdiv:inst2|                             ; 2619 (92)         ; 66 (66)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|clkdiv:inst2                                                                                                                ; work         ;
 ;       |lpm_divide:Mod0|                       ; 2527 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|clkdiv:inst2|lpm_divide:Mod0                                                                                                ; work         ;
 ;          |lpm_divide_c8m:auto_generated|      ; 2527 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|clkdiv:inst2|lpm_divide:Mod0|lpm_divide_c8m:auto_generated                                                                  ; work         ;
 ;             |sign_div_unsign_jnh:divider|     ; 2527 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|clkdiv:inst2|lpm_divide:Mod0|lpm_divide_c8m:auto_generated|sign_div_unsign_jnh:divider                                      ; work         ;
 ;                |alt_u_div_86f:divider|        ; 2527 (2527)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|clkdiv:inst2|lpm_divide:Mod0|lpm_divide_c8m:auto_generated|sign_div_unsign_jnh:divider|alt_u_div_86f:divider                ; work         ;
-;    |kevansVGA:inst3|                          ; 6161 (1768)       ; 32 (12)      ; 0           ; 52           ; 0       ; 26        ; 0    ; 0            ; |antfarm|kevansVGA:inst3                                                                                                             ; work         ;
+;    |kevansVGA:inst3|                          ; 6153 (1760)       ; 32 (12)      ; 0           ; 52           ; 0       ; 26        ; 0    ; 0            ; |antfarm|kevansVGA:inst3                                                                                                             ; work         ;
 ;       |lpm_mult:Mult100|                      ; 79 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|kevansVGA:inst3|lpm_mult:Mult100                                                                                            ; work         ;
 ;          |mult_pat:auto_generated|            ; 79 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|kevansVGA:inst3|lpm_mult:Mult100|mult_pat:auto_generated                                                                    ; work         ;
 ;             |alt_mac_mult:mac_mult1|          ; 41 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|kevansVGA:inst3|lpm_mult:Mult100|mult_pat:auto_generated|alt_mac_mult:mac_mult1                                             ; work         ;
@@ -1158,7 +1158,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                |mac_mult_0pg1:auto_generated| ; 24 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|kevansVGA:inst3|lpm_mult:Mult98|mult_pat:auto_generated|alt_mac_mult:mac_mult3|mac_mult_0pg1:auto_generated                 ; work         ;
 ;                   |mult_okl:mult1|            ; 24 (24)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|kevansVGA:inst3|lpm_mult:Mult98|mult_pat:auto_generated|alt_mac_mult:mac_mult3|mac_mult_0pg1:auto_generated|mult_okl:mult1  ; work         ;
 ;       |vga640x480:display|                    ; 66 (66)           ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|kevansVGA:inst3|vga640x480:display                                                                                          ; work         ;
-;    |quadrantEncoder:inst9|                    ; 27 (27)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|quadrantEncoder:inst9                                                                                                       ; work         ;
+;    |quadrantEncoder:inst9|                    ; 39 (39)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|quadrantEncoder:inst9                                                                                                       ; work         ;
 ;    |quadrantMux:inst5|                        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|quadrantMux:inst5                                                                                                           ; work         ;
 ;    |quadrentSelector:inst6|                   ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |antfarm|quadrentSelector:inst6                                                                                                      ; work         ;
 +-----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------+
@@ -2015,41 +2015,41 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; EnterTheMAtrix:inst4|blockV2:inst14|inSouthBlocktype[2]    ; Merged with EnterTheMAtrix:inst4|blockV2:inst14|inSouthBlocktype[1] ;
 ; EnterTheMAtrix:inst4|blockV2:inst7|inSouthBlocktype[2]     ; Merged with EnterTheMAtrix:inst4|blockV2:inst7|inSouthBlocktype[1]  ;
 ; EnterTheMAtrix:inst4|blockV2:inst6|inEastBlocktype[2]      ; Merged with EnterTheMAtrix:inst4|blockV2:inst6|inEastBlocktype[1]   ;
-; EnterTheMAtrix:inst4|blockV2:inst4|blocktype[1]            ; Stuck at VCC due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst4|outWest[7]              ; Stuck at VCC due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst11|blocktype[1]           ; Stuck at VCC due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst11|outWest[7]             ; Stuck at VCC due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst11|inNorthBlocktype[1]    ; Stuck at VCC due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst18|blocktype[1]           ; Stuck at VCC due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst18|outWest[7]             ; Stuck at VCC due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst18|inNorthBlocktype[1]    ; Stuck at VCC due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst25|blocktype[1]           ; Stuck at VCC due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst25|outWest[7]             ; Stuck at VCC due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst25|inNorthBlocktype[1]    ; Stuck at VCC due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst32|blocktype[1]           ; Stuck at VCC due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst32|outWest[7]             ; Stuck at VCC due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst32|inNorthBlocktype[1]    ; Stuck at VCC due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst37|blocktype[0]           ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst37|outWest[6]             ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst33|blocktype[0]           ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst33|outWest[6]             ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst33|inWestBlocktype[1]     ; Stuck at VCC due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst33|inSouthBlocktype[0]    ; Stuck at GND due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst4|blocktype[0]            ; Stuck at GND due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst4|outWest[6]              ; Stuck at GND due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst11|blocktype[0]           ; Stuck at GND due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst11|outWest[6]             ; Stuck at GND due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst11|inNorthBlocktype[0]    ; Stuck at GND due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst18|blocktype[0]           ; Stuck at GND due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst18|outWest[6]             ; Stuck at GND due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst18|inNorthBlocktype[0]    ; Stuck at GND due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst25|blocktype[0]           ; Stuck at GND due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst25|outWest[6]             ; Stuck at GND due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst25|inNorthBlocktype[0]    ; Stuck at GND due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst32|blocktype[0]           ; Stuck at GND due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst32|outWest[6]             ; Stuck at GND due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst32|inNorthBlocktype[0]    ; Stuck at GND due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst37|blocktype[1]           ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst37|outWest[7]             ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst33|blocktype[1]           ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst33|outWest[7]             ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst33|inWestBlocktype[0]     ; Stuck at GND due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst33|inSouthBlocktype[1]    ; Stuck at VCC due to stuck port data_in                              ;
 ; EnterTheMAtrix:inst4|blockV2:inst26|blocktype[1]           ; Stuck at VCC due to stuck port data_in                              ;
 ; EnterTheMAtrix:inst4|blockV2:inst26|outWest[7]             ; Stuck at VCC due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst26|inSouthBlocktype[0]    ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst19|blocktype[0]           ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst19|outWest[6]             ; Stuck at GND due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst26|inSouthBlocktype[1]    ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst19|blocktype[1]           ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst19|outWest[7]             ; Stuck at VCC due to stuck port data_in                              ;
 ; EnterTheMAtrix:inst4|blockV2:inst19|inSouthBlocktype[1]    ; Stuck at VCC due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst12|blocktype[0]           ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst12|outWest[6]             ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst12|inSouthBlocktype[0]    ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst5|blocktype[0]            ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst5|outWest[6]              ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst5|inSouthBlocktype[0]     ; Stuck at GND due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst12|blocktype[1]           ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst12|outWest[7]             ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst12|inSouthBlocktype[1]    ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst5|blocktype[1]            ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst5|outWest[7]              ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst5|inSouthBlocktype[1]     ; Stuck at VCC due to stuck port data_in                              ;
 ; EnterTheMAtrix:inst4|blockV2:inst6|blocktype[1]            ; Stuck at VCC due to stuck port data_in                              ;
 ; EnterTheMAtrix:inst4|blockV2:inst6|outWest[7]              ; Stuck at VCC due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst6|inWestBlocktype[0]      ; Stuck at GND due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst6|inWestBlocktype[1]      ; Stuck at VCC due to stuck port data_in                              ;
 ; EnterTheMAtrix:inst4|blockV2:inst13|blocktype[1]           ; Stuck at VCC due to stuck port data_in                              ;
 ; EnterTheMAtrix:inst4|blockV2:inst13|outWest[7]             ; Stuck at VCC due to stuck port data_in                              ;
 ; EnterTheMAtrix:inst4|blockV2:inst13|inNorthBlocktype[1]    ; Stuck at VCC due to stuck port data_in                              ;
@@ -2068,54 +2068,39 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; EnterTheMAtrix:inst4|blockV2:inst39|blocktype[1]           ; Stuck at VCC due to stuck port data_in                              ;
 ; EnterTheMAtrix:inst4|blockV2:inst39|outEast[7]             ; Stuck at VCC due to stuck port data_in                              ;
 ; EnterTheMAtrix:inst4|blockV2:inst39|inWestBlocktype[1]     ; Stuck at VCC due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst35|blocktype[0]           ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst35|outEast[6]             ; Stuck at GND due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst35|blocktype[1]           ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst35|outEast[7]             ; Stuck at VCC due to stuck port data_in                              ;
 ; EnterTheMAtrix:inst4|blockV2:inst35|inSouthBlocktype[1]    ; Stuck at VCC due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst28|blocktype[0]           ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst28|outEast[6]             ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst28|inSouthBlocktype[0]    ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst21|blocktype[0]           ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst21|outEast[6]             ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst21|inSouthBlocktype[0]    ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst14|blocktype[0]           ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst14|outEast[6]             ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst14|inSouthBlocktype[0]    ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst7|blocktype[0]            ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst7|outEast[6]              ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst7|inSouthBlocktype[0]     ; Stuck at GND due to stuck port data_in                              ;
-; EnterTheMAtrix:inst4|blockV2:inst6|inEastBlocktype[0]      ; Stuck at GND due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst28|blocktype[1]           ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst28|outEast[7]             ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst28|inSouthBlocktype[1]    ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst21|blocktype[1]           ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst21|outEast[7]             ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst21|inSouthBlocktype[1]    ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst14|blocktype[1]           ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst14|outEast[7]             ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst14|inSouthBlocktype[1]    ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst7|blocktype[1]            ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst7|outEast[7]              ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst7|inSouthBlocktype[1]     ; Stuck at VCC due to stuck port data_in                              ;
+; EnterTheMAtrix:inst4|blockV2:inst6|inEastBlocktype[1]      ; Stuck at VCC due to stuck port data_in                              ;
 ; kevansVGA:inst3|cnt[15]                                    ; Merged with clk_div_by_four:inst7|count[0]                          ;
-; EnterTheMAtrix:inst4|blockV2:inst33|inSouthBlocktype[1]    ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst37|outWest[7]             ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst26|inSouthBlocktype[1]    ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst33|outWest[7]             ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst6|inWestBlocktype[1]      ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst5|outWest[7]              ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst12|inSouthBlocktype[1]    ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst19|outWest[7]             ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst5|inSouthBlocktype[1]     ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst12|outWest[7]             ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst28|inSouthBlocktype[1]    ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst35|outEast[7]             ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst21|inSouthBlocktype[1]    ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst28|outEast[7]             ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst6|inEastBlocktype[1]      ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst7|outEast[7]              ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst14|inSouthBlocktype[1]    ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst21|outEast[7]             ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst7|inSouthBlocktype[1]     ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst14|outEast[7]             ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst37|blocktype[1]           ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst33|blocktype[1]           ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst19|blocktype[1]           ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst12|blocktype[1]           ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst5|blocktype[1]            ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst35|blocktype[1]           ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst28|blocktype[1]           ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst21|blocktype[1]           ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst14|blocktype[1]           ; Lost fanout                                                         ;
-; EnterTheMAtrix:inst4|blockV2:inst7|blocktype[1]            ; Lost fanout                                                         ;
-; Total Number of Removed Registers = 987                    ;                                                                     ;
+; EnterTheMAtrix:inst4|blockV2:inst11|inNorthBlocktype[1]    ; Lost fanout                                                         ;
+; EnterTheMAtrix:inst4|blockV2:inst4|outWest[7]              ; Lost fanout                                                         ;
+; EnterTheMAtrix:inst4|blockV2:inst18|inNorthBlocktype[1]    ; Lost fanout                                                         ;
+; EnterTheMAtrix:inst4|blockV2:inst11|outWest[7]             ; Lost fanout                                                         ;
+; EnterTheMAtrix:inst4|blockV2:inst25|inNorthBlocktype[1]    ; Lost fanout                                                         ;
+; EnterTheMAtrix:inst4|blockV2:inst18|outWest[7]             ; Lost fanout                                                         ;
+; EnterTheMAtrix:inst4|blockV2:inst33|inWestBlocktype[1]     ; Lost fanout                                                         ;
+; EnterTheMAtrix:inst4|blockV2:inst32|outWest[7]             ; Lost fanout                                                         ;
+; EnterTheMAtrix:inst4|blockV2:inst32|inNorthBlocktype[1]    ; Lost fanout                                                         ;
+; EnterTheMAtrix:inst4|blockV2:inst25|outWest[7]             ; Lost fanout                                                         ;
+; EnterTheMAtrix:inst4|blockV2:inst4|blocktype[1]            ; Lost fanout                                                         ;
+; EnterTheMAtrix:inst4|blockV2:inst11|blocktype[1]           ; Lost fanout                                                         ;
+; EnterTheMAtrix:inst4|blockV2:inst18|blocktype[1]           ; Lost fanout                                                         ;
+; EnterTheMAtrix:inst4|blockV2:inst25|blocktype[1]           ; Lost fanout                                                         ;
+; EnterTheMAtrix:inst4|blockV2:inst32|blocktype[1]           ; Lost fanout                                                         ;
+; Total Number of Removed Registers = 972                    ;                                                                     ;
 +------------------------------------------------------------+---------------------------------------------------------------------+
 
 
@@ -2124,68 +2109,43 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +--------------------------------------------------+---------------------------+----------------------------------------------------------+
 ; Register name                                    ; Reason for Removal        ; Registers Removed due to This Register                   ;
 +--------------------------------------------------+---------------------------+----------------------------------------------------------+
-; EnterTheMAtrix:inst4|blockV2:inst37|blocktype[0] ; Stuck at GND              ; EnterTheMAtrix:inst4|blockV2:inst37|outWest[6],          ;
-;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst33|inSouthBlocktype[0], ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst33|inSouthBlocktype[1], ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst37|outWest[7],          ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst37|blocktype[1]         ;
-; EnterTheMAtrix:inst4|blockV2:inst33|blocktype[0] ; Stuck at GND              ; EnterTheMAtrix:inst4|blockV2:inst33|outWest[6],          ;
-;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst26|inSouthBlocktype[0], ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst26|inSouthBlocktype[1], ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst33|outWest[7],          ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst33|blocktype[1]         ;
-; EnterTheMAtrix:inst4|blockV2:inst19|blocktype[0] ; Stuck at GND              ; EnterTheMAtrix:inst4|blockV2:inst19|outWest[6],          ;
-;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst12|inSouthBlocktype[0], ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst12|inSouthBlocktype[1], ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst19|outWest[7],          ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst19|blocktype[1]         ;
-; EnterTheMAtrix:inst4|blockV2:inst12|blocktype[0] ; Stuck at GND              ; EnterTheMAtrix:inst4|blockV2:inst12|outWest[6],          ;
-;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst5|inSouthBlocktype[0],  ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst5|inSouthBlocktype[1],  ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst12|outWest[7],          ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst12|blocktype[1]         ;
-; EnterTheMAtrix:inst4|blockV2:inst5|blocktype[0]  ; Stuck at GND              ; EnterTheMAtrix:inst4|blockV2:inst5|outWest[6],           ;
-;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst6|inWestBlocktype[0],   ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst6|inWestBlocktype[1],   ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst5|outWest[7],           ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst5|blocktype[1]          ;
-; EnterTheMAtrix:inst4|blockV2:inst35|blocktype[0] ; Stuck at GND              ; EnterTheMAtrix:inst4|blockV2:inst35|outEast[6],          ;
-;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst28|inSouthBlocktype[0], ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst28|inSouthBlocktype[1], ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst35|outEast[7],          ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst35|blocktype[1]         ;
-; EnterTheMAtrix:inst4|blockV2:inst28|blocktype[0] ; Stuck at GND              ; EnterTheMAtrix:inst4|blockV2:inst28|outEast[6],          ;
-;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst21|inSouthBlocktype[0], ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst21|inSouthBlocktype[1], ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst28|outEast[7],          ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst28|blocktype[1]         ;
-; EnterTheMAtrix:inst4|blockV2:inst21|blocktype[0] ; Stuck at GND              ; EnterTheMAtrix:inst4|blockV2:inst21|outEast[6],          ;
-;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst14|inSouthBlocktype[0], ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst14|inSouthBlocktype[1], ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst21|outEast[7],          ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst21|blocktype[1]         ;
-; EnterTheMAtrix:inst4|blockV2:inst14|blocktype[0] ; Stuck at GND              ; EnterTheMAtrix:inst4|blockV2:inst14|outEast[6],          ;
-;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst7|inSouthBlocktype[0],  ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst7|inSouthBlocktype[1],  ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst14|outEast[7],          ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst14|blocktype[1]         ;
-; EnterTheMAtrix:inst4|blockV2:inst7|blocktype[0]  ; Stuck at GND              ; EnterTheMAtrix:inst4|blockV2:inst7|outEast[6],           ;
-;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst6|inEastBlocktype[0],   ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst6|inEastBlocktype[1],   ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst7|outEast[7],           ;
-;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst7|blocktype[1]          ;
-; EnterTheMAtrix:inst4|blockV2:inst4|blocktype[1]  ; Stuck at VCC              ; EnterTheMAtrix:inst4|blockV2:inst4|outWest[7],           ;
-;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst11|inNorthBlocktype[1]  ;
-; EnterTheMAtrix:inst4|blockV2:inst11|blocktype[1] ; Stuck at VCC              ; EnterTheMAtrix:inst4|blockV2:inst11|outWest[7],          ;
-;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst18|inNorthBlocktype[1]  ;
-; EnterTheMAtrix:inst4|blockV2:inst18|blocktype[1] ; Stuck at VCC              ; EnterTheMAtrix:inst4|blockV2:inst18|outWest[7],          ;
-;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst25|inNorthBlocktype[1]  ;
-; EnterTheMAtrix:inst4|blockV2:inst25|blocktype[1] ; Stuck at VCC              ; EnterTheMAtrix:inst4|blockV2:inst25|outWest[7],          ;
-;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst32|inNorthBlocktype[1]  ;
-; EnterTheMAtrix:inst4|blockV2:inst32|blocktype[1] ; Stuck at VCC              ; EnterTheMAtrix:inst4|blockV2:inst32|outWest[7],          ;
-;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst33|inWestBlocktype[1]   ;
+; EnterTheMAtrix:inst4|blockV2:inst4|blocktype[0]  ; Stuck at GND              ; EnterTheMAtrix:inst4|blockV2:inst4|outWest[6],           ;
+;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst11|inNorthBlocktype[0], ;
+;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst11|inNorthBlocktype[1], ;
+;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst4|outWest[7],           ;
+;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst4|blocktype[1]          ;
+; EnterTheMAtrix:inst4|blockV2:inst11|blocktype[0] ; Stuck at GND              ; EnterTheMAtrix:inst4|blockV2:inst11|outWest[6],          ;
+;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst18|inNorthBlocktype[0], ;
+;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst18|inNorthBlocktype[1], ;
+;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst11|outWest[7],          ;
+;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst11|blocktype[1]         ;
+; EnterTheMAtrix:inst4|blockV2:inst18|blocktype[0] ; Stuck at GND              ; EnterTheMAtrix:inst4|blockV2:inst18|outWest[6],          ;
+;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst25|inNorthBlocktype[0], ;
+;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst25|inNorthBlocktype[1], ;
+;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst18|outWest[7],          ;
+;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst18|blocktype[1]         ;
+; EnterTheMAtrix:inst4|blockV2:inst25|blocktype[0] ; Stuck at GND              ; EnterTheMAtrix:inst4|blockV2:inst25|outWest[6],          ;
+;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst32|inNorthBlocktype[0], ;
+;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst32|inNorthBlocktype[1], ;
+;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst25|outWest[7],          ;
+;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst25|blocktype[1]         ;
+; EnterTheMAtrix:inst4|blockV2:inst32|blocktype[0] ; Stuck at GND              ; EnterTheMAtrix:inst4|blockV2:inst32|outWest[6],          ;
+;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst33|inWestBlocktype[0],  ;
+;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst33|inWestBlocktype[1],  ;
+;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst32|outWest[7],          ;
+;                                                  ;                           ; EnterTheMAtrix:inst4|blockV2:inst32|blocktype[1]         ;
+; EnterTheMAtrix:inst4|blockV2:inst37|blocktype[1] ; Stuck at VCC              ; EnterTheMAtrix:inst4|blockV2:inst37|outWest[7],          ;
+;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst33|inSouthBlocktype[1]  ;
+; EnterTheMAtrix:inst4|blockV2:inst33|blocktype[1] ; Stuck at VCC              ; EnterTheMAtrix:inst4|blockV2:inst33|outWest[7],          ;
+;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst26|inSouthBlocktype[1]  ;
 ; EnterTheMAtrix:inst4|blockV2:inst26|blocktype[1] ; Stuck at VCC              ; EnterTheMAtrix:inst4|blockV2:inst26|outWest[7],          ;
 ;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst19|inSouthBlocktype[1]  ;
+; EnterTheMAtrix:inst4|blockV2:inst19|blocktype[1] ; Stuck at VCC              ; EnterTheMAtrix:inst4|blockV2:inst19|outWest[7],          ;
+;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst12|inSouthBlocktype[1]  ;
+; EnterTheMAtrix:inst4|blockV2:inst12|blocktype[1] ; Stuck at VCC              ; EnterTheMAtrix:inst4|blockV2:inst12|outWest[7],          ;
+;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst5|inSouthBlocktype[1]   ;
+; EnterTheMAtrix:inst4|blockV2:inst5|blocktype[1]  ; Stuck at VCC              ; EnterTheMAtrix:inst4|blockV2:inst5|outWest[7],           ;
+;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst6|inWestBlocktype[1]    ;
 ; EnterTheMAtrix:inst4|blockV2:inst6|blocktype[1]  ; Stuck at VCC              ; EnterTheMAtrix:inst4|blockV2:inst6|outWest[7],           ;
 ;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst13|inNorthBlocktype[1]  ;
 ; EnterTheMAtrix:inst4|blockV2:inst13|blocktype[1] ; Stuck at VCC              ; EnterTheMAtrix:inst4|blockV2:inst13|outWest[7],          ;
@@ -2200,6 +2160,16 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst39|inWestBlocktype[1]   ;
 ; EnterTheMAtrix:inst4|blockV2:inst39|blocktype[1] ; Stuck at VCC              ; EnterTheMAtrix:inst4|blockV2:inst39|outEast[7],          ;
 ;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst35|inSouthBlocktype[1]  ;
+; EnterTheMAtrix:inst4|blockV2:inst35|blocktype[1] ; Stuck at VCC              ; EnterTheMAtrix:inst4|blockV2:inst35|outEast[7],          ;
+;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst28|inSouthBlocktype[1]  ;
+; EnterTheMAtrix:inst4|blockV2:inst28|blocktype[1] ; Stuck at VCC              ; EnterTheMAtrix:inst4|blockV2:inst28|outEast[7],          ;
+;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst21|inSouthBlocktype[1]  ;
+; EnterTheMAtrix:inst4|blockV2:inst21|blocktype[1] ; Stuck at VCC              ; EnterTheMAtrix:inst4|blockV2:inst21|outEast[7],          ;
+;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst14|inSouthBlocktype[1]  ;
+; EnterTheMAtrix:inst4|blockV2:inst14|blocktype[1] ; Stuck at VCC              ; EnterTheMAtrix:inst4|blockV2:inst14|outEast[7],          ;
+;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst7|inSouthBlocktype[1]   ;
+; EnterTheMAtrix:inst4|blockV2:inst7|blocktype[1]  ; Stuck at VCC              ; EnterTheMAtrix:inst4|blockV2:inst7|outEast[7],           ;
+;                                                  ; due to stuck port data_in ; EnterTheMAtrix:inst4|blockV2:inst6|inEastBlocktype[1]    ;
 +--------------------------------------------------+---------------------------+----------------------------------------------------------+
 
 
@@ -2208,12 +2178,12 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 886   ;
+; Total registers                              ; 901   ;
 ; Number of registers using Synchronous Clear  ; 10    ;
-; Number of registers using Synchronous Load   ; 49    ;
+; Number of registers using Synchronous Load   ; 54    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 14    ;
+; Number of registers using Clock Enable       ; 11    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -2226,96 +2196,95 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |antfarm|kevansVGA:inst3|vga640x480:display|h_count[9] ;
 ; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |antfarm|kevansVGA:inst3|vga640x480:display|v_count[6] ;
 ; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |antfarm|quadrantEncoder:inst9|Mux42                   ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |antfarm|quadrantEncoder:inst9|Mux87                   ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst7|Mux2       ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst7|Mux2       ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst7|Mux2       ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst7|Mux2       ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |antfarm|quadrantEncoder:inst9|Mux84                   ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst7|Mux2       ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst6|Mux0       ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst6|Mux0       ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst6|Mux0       ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst6|Mux0       ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst39|Selector0 ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst39|Selector0 ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst39|Selector0 ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst6|Mux0       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst39|Mux2      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst39|Mux2      ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst39|Mux2      ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst39|Mux2      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst5|Mux0       ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst5|Mux0       ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst5|Mux0       ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst5|Mux0       ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst38|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst38|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst38|Mux0      ;
 ; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst38|Mux0      ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst4|Mux0       ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst4|Mux0       ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst37|Mux0      ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst4|Mux0       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst37|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst37|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst14|Mux2      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst14|Mux2      ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst14|Mux2      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst14|Mux2      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst14|Mux2      ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst14|Mux2      ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst14|Mux2      ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst14|Mux2      ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst14|Mux2      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst13|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst13|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst13|Mux0      ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst13|Mux0      ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst13|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst12|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst12|Mux0      ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst12|Mux0      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst12|Mux0      ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst12|Mux0      ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst11|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst11|Mux0      ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst11|Mux0      ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst11|Mux0      ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst11|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst21|Mux2      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst21|Mux2      ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst21|Mux2      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst21|Mux2      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst21|Mux2      ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst21|Mux2      ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst21|Mux2      ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst21|Mux2      ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst21|Mux2      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst20|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst20|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst20|Mux0      ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst20|Mux0      ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst20|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst19|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst19|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst19|Mux0      ;
 ; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst19|Mux0      ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst18|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst18|Mux0      ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst18|Mux0      ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst18|Mux0      ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst18|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst28|Mux2      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst28|Mux2      ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst28|Mux2      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst28|Mux2      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst28|Mux2      ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst28|Mux2      ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst28|Mux2      ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst28|Mux2      ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst28|Mux2      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst27|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst27|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst27|Mux0      ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst27|Mux0      ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst27|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst26|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst26|Mux0      ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst26|Mux0      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst26|Mux0      ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst26|Mux0      ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst25|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst25|Mux0      ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst25|Mux0      ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst25|Mux0      ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst25|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst35|Mux2      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst35|Mux2      ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst35|Mux2      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst35|Mux2      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst35|Mux2      ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst35|Mux2      ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst35|Mux2      ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst35|Mux2      ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst35|Mux2      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst34|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst34|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst34|Mux0      ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst34|Mux0      ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst34|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst33|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst33|Mux0      ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst33|Mux0      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst33|Mux0      ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst33|Mux0      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst32|Mux0      ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst32|Mux0      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst32|Mux0      ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst6|Mux0       ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst39|Selector0 ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst39|Selector0 ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst38|Mux0      ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst13|Mux0      ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |antfarm|EnterTheMAtrix:inst4|blockV2:inst12|Mux0      ;
@@ -28312,7 +28281,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:01:26     ;
+; Top            ; 00:01:18     ;
 +----------------+--------------+
 
 
@@ -28322,7 +28291,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Dec 13 13:33:47 2019
+    Info: Processing started: Fri Dec 13 15:28:06 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off antfarm -c antfarm
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Warning (10463): Verilog HDL Declaration warning at block.v(7): "type" is SystemVerilog-2005 keyword
@@ -30283,7 +30252,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "RLED[2]" is stuck at GND
     Warning (13410): Pin "RLED[1]" is stuck at GND
     Warning (13410): Pin "RLED[0]" is stuck at GND
-Info (17049): 30 registers lost all their fanouts during netlist optimizations.
+Info (17049): 15 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "kevansVGA:inst3|lpm_mult:Mult60|mult_pat:auto_generated|alt_mac_mult:mac_mult1|mac_mult_vog1:auto_generated|mult_nkl:mult1|le4a[3]"
     Info (17048): Logic cell "kevansVGA:inst3|lpm_mult:Mult60|mult_pat:auto_generated|alt_mac_mult:mac_mult1|mac_mult_vog1:auto_generated|mult_nkl:mult1|le4a[2]"
@@ -30309,10 +30278,10 @@ Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "kevansVGA:inst3|lpm_mult:Mult132|mult_pat:auto_generated|alt_mac_mult:mac_mult1|mac_mult_vog1:auto_generated|mult_nkl:mult1|le4a[2]"
     Info (17048): Logic cell "kevansVGA:inst3|lpm_mult:Mult140|mult_pat:auto_generated|alt_mac_mult:mac_mult1|mac_mult_vog1:auto_generated|mult_nkl:mult1|le4a[1]"
     Info (17048): Logic cell "kevansVGA:inst3|Add65~4"
+    Info (17048): Logic cell "kevansVGA:inst3|Add163~4"
     Info (17048): Logic cell "kevansVGA:inst3|Add149~0"
     Info (17048): Logic cell "kevansVGA:inst3|Add149~2"
     Info (17048): Logic cell "kevansVGA:inst3|Add149~4"
-    Info (17048): Logic cell "kevansVGA:inst3|Add163~4"
     Info (17048): Logic cell "kevansVGA:inst3|Add198~0"
     Info (17048): Logic cell "kevansVGA:inst3|Add198~2"
     Info (17048): Logic cell "kevansVGA:inst3|Add198~4"
@@ -30352,16 +30321,16 @@ Warning (21074): Design contains 7 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "setinputs[4]"
     Warning (15610): No output dependent on input pin "en"
     Warning (15610): No output dependent on input pin "clkKey"
-Info (21057): Implemented 17365 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 17419 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 56 output pins
-    Info (21061): Implemented 17243 logic cells
+    Info (21061): Implemented 17297 logic cells
     Info (21062): Implemented 52 DSP elements
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 871 warnings
-    Info: Peak virtual memory: 4902 megabytes
-    Info: Processing ended: Fri Dec 13 13:35:26 2019
-    Info: Elapsed time: 00:01:39
-    Info: Total CPU time (on all processors): 00:01:33
+    Info: Peak virtual memory: 4901 megabytes
+    Info: Processing ended: Fri Dec 13 15:29:33 2019
+    Info: Elapsed time: 00:01:27
+    Info: Total CPU time (on all processors): 00:01:25
 
 
 +------------------------------------------+

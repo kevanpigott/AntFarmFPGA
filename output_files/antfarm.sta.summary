@@ -3,20 +3,20 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'clk'
-Slack : -225.862
-TNS   : -504.502
+Slack : -221.524
+TNS   : -492.958
 
 Type  : Slow Model Setup 'VGA_CLK'
-Slack : -23.289
-TNS   : -181.926
+Slack : -23.517
+TNS   : -235.152
 
 Type  : Slow Model Setup 'clkdiv:inst2|out'
-Slack : -6.660
-TNS   : -2286.306
+Slack : -6.424
+TNS   : -2216.465
 
 Type  : Slow Model Setup 'clk_div_by_four:inst7|out'
-Slack : 0.122
-TNS   : 0.000
+Slack : -0.454
+TNS   : -0.454
 
 Type  : Slow Model Hold 'VGA_CLK'
 Slack : 0.445
@@ -44,26 +44,26 @@ TNS   : -48.067
 
 Type  : Slow Model Minimum Pulse Width 'clkdiv:inst2|out'
 Slack : -0.611
-TNS   : -953.160
+TNS   : -971.490
 
 Type  : Slow Model Minimum Pulse Width 'clk_div_by_four:inst7|out'
 Slack : -0.611
 TNS   : -2.444
 
 Type  : Fast Model Setup 'clk'
-Slack : -86.383
-TNS   : -167.727
+Slack : -85.383
+TNS   : -163.501
 
 Type  : Fast Model Setup 'VGA_CLK'
-Slack : -7.796
-TNS   : -49.659
+Slack : -7.762
+TNS   : -70.810
 
 Type  : Fast Model Setup 'clkdiv:inst2|out'
-Slack : -1.962
-TNS   : -494.530
+Slack : -1.981
+TNS   : -461.666
 
 Type  : Fast Model Setup 'clk_div_by_four:inst7|out'
-Slack : 0.636
+Slack : 0.426
 TNS   : 0.000
 
 Type  : Fast Model Hold 'VGA_CLK'
@@ -92,7 +92,7 @@ TNS   : -39.380
 
 Type  : Fast Model Minimum Pulse Width 'clkdiv:inst2|out'
 Slack : -0.500
-TNS   : -780.000
+TNS   : -795.000
 
 Type  : Fast Model Minimum Pulse Width 'clk_div_by_four:inst7|out'
 Slack : -0.500

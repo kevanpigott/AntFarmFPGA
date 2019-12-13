@@ -54,10 +54,10 @@ colors such as cyan and pink.
 <h3>VGA:</h3>
 In order to view our game matrix, we needed to build a VGA display. Once Brian found a VGA implementation for the cyclone 2 at 
 <a href="https://timetoexplore.net/blog/arty-fpga-vga-verilog-01">timetoexplore.net</a> by Will Green, I had to find a way to draw
-blocks onto the screen. my idea to have an easily minupulated non static box matrix was to have an input stream in where each block was represented by 
-3 bits, R_on G_on and B_on using a for loop, and parameters such as blocks per row, width and height, i was able to create an affective and
-sompressed code to do so. As a large matrix gives the most interesting result, i tried to write nearly 100 blocks on the screen at once.
-after many failed attempts, I could not draw more than 35 blocks on the screen at a time. To my understanding, I beleive this
+blocks onto the screen. my idea to have an easily manipulated non static box matrix was to have an input stream in where each block was represented by 
+3 bits, R_on G_on and B_on using a for loop, and parameters such as blocks per row, width and height, I was able to create an affective and
+compressed code to do so. As a large matrix gives the most interesting result, i tried to write nearly 100 blocks on the screen at once.
+after many failed attempts, I could not draw more than 35 blocks on the screen at a time. To my understanding, I believe this
 issue comes from the video memory stats of the cyclone ii board. my solution to this was to divide the display into 4 quadrants.
 using the same input stream as before, but now adding a 2-bit selector, you could change the quadrant of the game board. By itself this doesnt 
 seem to help the situation, but, when adding a module that takes for quadrants, out puts one quadrant at a time, and outputs a 2-bit selector 
@@ -66,10 +66,10 @@ with the speed of the VGA clock, you cannot see the quadrants cycle, but you wil
 displayed blocks. to improve this I came up with a solution from an interesting source, cathode ray tube televisions.
 I remembered <a href="https://www.youtube.com/watch?v=3BJU2drrtCM"> a youtube video </a> that "pixels" on cathode ray tubes displays 
 dissipate slowly after being drawn by the scan line. although I could only draw 35 blocks on a single clock cycle to the highest RGB values,
-I could use the same stored blocks in the video memory to write too the lower VGA brighness values recursevly. Since there just so happens to be 4 VGA brighness values,
+I could use the same stored blocks in the video memory to write too the lower VGA brightness values recursively. Since there just so happens to be 4 VGA brightness values,
 I could write every block on the screen at once. as an example, quadrant 1 is written on the screen in VGA[3] on the first clock cycle. on the second clock cycle, VGA[2] receives 
-the values of VGA[3], effectively writting the blocks on the screen at a lower brightness in the same quadrant. at the same time, the selector moves to quadrant 2, where the new inputs are written
-at on VGA[3]. on the next cycle, quadrant 1 is written on VGA[1], quadrant 2 is written on VGA[2], and quadrant 3 is written at VGA[3], this continues down to VGA[0] a barely visable brightness level.
+the values of VGA[3], effectively writing the blocks on the screen at a lower brightness in the same quadrant. at the same time, the selector moves to quadrant 2, where the new inputs are written
+at on VGA[3]. on the next cycle, quadrant 1 is written on VGA[1], quadrant 2 is written on VGA[2], and quadrant 3 is written at VGA[3], this continues down to VGA[0] a barely visible brightness level.
 at these speeds and screen coverage, the visual quality is improved exceptionally.
 
 <h3>Photos and videos:</h3>
