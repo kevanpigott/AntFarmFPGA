@@ -1,0 +1,14 @@
+module clk_div_by_four(clk,out);
+input clk;
+output reg out;
+reg count[1:0]
+reg rise=0;
+
+always@(posedge clk)begin
+out<=rise;
+if(count==2'd3) begin
+rise=!rise;
+end
+count=count+1;
+end
+endmodule;

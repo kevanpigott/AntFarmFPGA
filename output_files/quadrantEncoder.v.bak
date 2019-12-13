@@ -1,0 +1,14 @@
+module quadrantEncoder(quadrantIn,clk_in,clk_out,quadrantOut,inA,inB,inC,inD);
+input clk;
+output clk_out=clk;
+input [1:0]quadrantIn;
+output [1:0]quadrantOut=quadrantIn;
+input [104:0]inA;
+input [104:0]inB;
+input [104:0]inC;
+input [104:0]inD;
+
+always@(*)begin
+	
+end
+

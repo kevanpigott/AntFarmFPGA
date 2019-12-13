@@ -1,3 +1,4 @@
+//Author: Kevan Pigott
 module ColumnEncoder(clk,ZZ,ZO,OZ,OO,tZ,outSel,outCol,outW);
 
 input clk;

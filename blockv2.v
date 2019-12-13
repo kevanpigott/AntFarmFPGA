@@ -1,3 +1,4 @@
+//Author:Kevan Pigott
 module blockV2(clk, en, set, SetIn, inNorth, inSouth,inEast,inWest,outNorth,outSouth,outEast,outWest,dispOut,outState);
 //these parameters set how many bits the insputs and outputs are
 parameter inL=8;
@@ -9,7 +10,7 @@ output reg [7:0] outState;
 input clk;
 input en;
 input set;//used in initializing game matrix if set==1 then sets all vars to SetIn encluding blocktype ant sugar etc.
-input [inL:0]SetIn;
+input [8:0]SetIn;
 input [inL:0]inNorth;
 input [inL:0]inSouth;
 input [inL:0]inEast;
@@ -44,10 +45,14 @@ reg outSouthVerify;
 reg outEastVerify;
 reg outWestVerify;
 //block type parameters
+//original:
 parameter empty=3'd0, air=3'd1, dirt=3'd2, ground=3'd3, queen=3'd4, wall=3'd5, errorblock=3'd6, tunnel=3'd7;
-
+//to follow 3-bit RGB, counting from 0, Black, Blue, Green, Cyan, Red, Pink, Yellow, White
+//new
+//parameter empty=3'd0, tunnel=3'd1, ground=3'd2, air=3'd3,  dirt=3'd4,   queen=3'd5, wall=3'd6, errorblock=3'd7;
+			 //black     //blue       //green      //cyan     //red       //pink     //yellow         //white
 //these are the states. dont freak out, i wrote C code to type it for me.
-parameter 
+parameter //number of states=177
 START=8'd51, A=8'd0, B=8'd1, C=8'd2, D=8'd3, E=8'd4, F=8'd5, G=8'd6, H=8'd7, I=8'd8, J=8'd9, 
 K=8'd10, L=8'd11, M=8'd12, N=8'd13, O=8'd14, P=8'd15, Q=8'd16, R=8'd17, S=8'd18, T=8'd19, 
 U=8'd20, V=8'd21, W=8'd22, X=8'd23, Y=8'd24, Z=8'd25, AA=8'd26, AB=8'd27, AC=8'd28, AD=8'd29, 

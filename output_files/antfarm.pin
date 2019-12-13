@@ -268,7 +268,7 @@ GND*                         : G21       :        :                   :         
 GND*                         : G22       :        :                   :         : 5         :                
 hexoutA[3]                   : H1        : output : 3.3-V LVTTL       :         : 2         : Y              
 hexoutA[2]                   : H2        : output : 3.3-V LVTTL       :         : 2         : Y              
-GLED[8]                      : H3        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : H3        :        :                   :         : 2         :                
 hexoutB[3]                   : H4        : output : 3.3-V LVTTL       :         : 2         : Y              
 hexoutB[2]                   : H5        : output : 3.3-V LVTTL       :         : 2         : Y              
 hexoutB[1]                   : H6        : output : 3.3-V LVTTL       :         : 2         : Y              
@@ -528,7 +528,7 @@ VCCIO7                       : W17       : power  :                   : 3.3V    
 NC                           : W18       :        :                   :         :           :                
 GND                          : W19       : gnd    :                   :         :           :                
 ~LVDS91p/nCEO~               : W20       : output : 3.3-V LVTTL       :         : 6         : N              
-GLED[5]                      : W21       : output : 3.3-V LVTTL       :         : 6         : Y              
+GND*                         : W21       :        :                   :         : 6         :                
 GLED[4]                      : W22       : output : 3.3-V LVTTL       :         : 6         : Y              
 GND*                         : Y1        :        :                   :         : 1         :                
 GND*                         : Y2        :        :                   :         : 1         :                
@@ -550,5 +550,5 @@ GND*                         : Y17       :        :                   :         
 RLED[6]                      : Y18       : output : 3.3-V LVTTL       :         : 6         : Y              
 RLED[3]                      : Y19       : output : 3.3-V LVTTL       :         : 6         : Y              
 GND*                         : Y20       :        :                   :         : 6         :                
-GLED[7]                      : Y21       : output : 3.3-V LVTTL       :         : 6         : Y              
-GLED[6]                      : Y22       : output : 3.3-V LVTTL       :         : 6         : Y              
+GND*                         : Y21       :        :                   :         : 6         :                
+GND*                         : Y22       :        :                   :         : 6         :                

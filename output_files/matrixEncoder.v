@@ -1,3 +1,4 @@
+//Author: Kevan Pigott
 module matrixEncoder(clk,ZZ,ZO,OZ,OO,tZ,tO,outSel,outCol);
 
 input clk;

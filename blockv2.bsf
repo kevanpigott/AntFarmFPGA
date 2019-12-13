@@ -47,8 +47,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 280)
 		(input)
-		(text "SetIn[inL..0]" (rect 0 0 60 12)(font "Arial" ))
-		(text "SetIn[inL..0]" (rect 21 275 81 287)(font "Arial" ))
+		(text "SetIn[8..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "SetIn[8..0]" (rect 21 275 72 287)(font "Arial" ))
 		(line (pt 0 280)(pt 16 280)(line_width 3))
 	)
 	(port
@@ -56,19 +56,19 @@ applicable agreement for further details.
 		(input)
 		(text "inNorth[inL..0]" (rect 0 0 69 12)(font "Arial" ))
 		(text "inNorth[inL..0]" (rect 152 25 164 94)(font "Arial" )(vertical))
-		(line (pt 160 0)(pt 160 17)(line_width 3))
+		(line (pt 160 0)(pt 160 16)(line_width 3))
 	)
 	(port
 		(pt 192 360)
 		(input)
 		(text "inSouth[inL..0]" (rect 0 0 70 12)(font "Arial" ))
 		(text "inSouth[inL..0]" (rect 184 264 196 334)(font "Arial" )(vertical))
-		(line (pt 192 360)(pt 192 343)(line_width 3))
+		(line (pt 192 360)(pt 192 344)(line_width 3))
 	)
 	(port
 		(pt 384 160)
 		(input)
-		(text "inEast[inL..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "inEast[inL..0]" (rect 16 0 80 12)(font "Arial" ))
 		(text "inEast[inL..0]" (rect 295 152 359 164)(font "Arial" ))
 		(line (pt 368 160)(pt 384 160)(line_width 3))
 	)
@@ -82,44 +82,44 @@ applicable agreement for further details.
 	(port
 		(pt 192 0)
 		(output)
-		(text "outNorth[outL..0]" (rect 160 0 243 12)(font "Arial" ))
+		(text "outNorth[outL..0]" (rect 112 0 195 12)(font "Arial" ))
 		(text "outNorth[outL..0]" (rect 184 23 196 106)(font "Arial" )(vertical))
 		(line (pt 192 0)(pt 192 16)(line_width 3))
 	)
 	(port
 		(pt 160 360)
 		(output)
-		(text "outSouth[outL..0]" (rect 160 0 244 12)(font "Arial" ))
+		(text "outSouth[outL..0]" (rect 144 0 228 12)(font "Arial" ))
 		(text "outSouth[outL..0]" (rect 152 252 164 336)(font "Arial" )(vertical))
 		(line (pt 160 360)(pt 160 344)(line_width 3))
 	)
 	(port
-		(pt 384 184)
-		(output)
-		(text "outEast[outL..0]" (rect 160 0 239 12)(font "Arial" ))
-		(text "outEast[outL..0]" (rect 297 179 363 191)(font "Arial" ))
-		(line (pt 384 184)(pt 368 184)(line_width 3))
-	)
-	(port
 		(pt 0 160)
 		(output)
-		(text "outWest[outL..0]" (rect 160 0 242 12)(font "Arial" ))
-		(text "outWest[outL..0]" (rect 24 152 106 164)(font "Arial" ))
+		(text "outEast[outL..0]" (rect 144 0 223 12)(font "Arial" ))
+		(text "outEast[outL..0]" (rect 24 152 103 164)(font "Arial" ))
 		(line (pt 16 160)(pt 0 160)(line_width 3))
+	)
+	(port
+		(pt 384 184)
+		(output)
+		(text "outWest[outL..0]" (rect 160 0 242 12)(font "Arial" ))
+		(text "outWest[outL..0]" (rect 277 176 359 188)(font "Arial" ))
+		(line (pt 384 184)(pt 368 184)(line_width 3))
 	)
 	(port
 		(pt 384 304)
 		(output)
 		(text "dispOut[4..0]" (rect 160 0 223 12)(font "Arial" ))
-		(text "dispOut[4..0]" (rect 310 299 363 311)(font "Arial" ))
+		(text "dispOut[4..0]" (rect 310 299 373 311)(font "Arial" ))
 		(line (pt 384 304)(pt 368 304)(line_width 3))
 	)
 	(port
-		(pt 384 320)
+		(pt 384 328)
 		(output)
 		(text "outState[7..0]" (rect 160 0 227 12)(font "Arial" ))
-		(text "outState[7..0]" (rect 307 315 363 327)(font "Arial" ))
-		(line (pt 384 320)(pt 368 320)(line_width 3))
+		(text "outState[7..0]" (rect 307 323 374 335)(font "Arial" ))
+		(line (pt 384 328)(pt 368 328)(line_width 3))
 	)
 	(parameter
 		"inL"
@@ -137,37 +137,37 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"air"
+		"tunnel"
 		"001"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"dirt"
+		"ground"
 		"010"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"ground"
+		"air"
 		"011"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"queen"
+		"dirt"
 		"100"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"wall"
+		"queen"
 		"101"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"errorblock"
+		"wall"
 		"110"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"tunnel"
+		"errorblock"
 		"111"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
@@ -1117,7 +1117,7 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
-		(rectangle (rect 16 16 360 344))
+		(rectangle (rect 8 8 376 352))
 	)
-	(annotation_block (parameter)(rect 240 -2784 448 16))
+	(annotation_block (parameter)(rect 440 -2736 648 64))
 )

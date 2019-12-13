@@ -26,23 +26,30 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "clk" (rect 0 0 10 12)(font "Arial" ))
-		(text "clk" (rect 21 27 31 39)(font "Arial" ))
+		(text "rst_btn" (rect 0 0 28 12)(font "Arial" ))
+		(text "rst_btn" (rect 21 27 49 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 1))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "rst_btn" (rect 0 0 28 12)(font "Arial" ))
-		(text "rst_btn" (rect 21 43 49 55)(font "Arial" ))
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 43 31 55)(font "Arial" ))
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "pixelMemory[47..0]" (rect 0 0 77 12)(font "Arial" ))
-		(text "pixelMemory[47..0]" (rect 21 59 98 71)(font "Arial" ))
+		(text "pixelMemory[104..0]" (rect 0 0 81 12)(font "Arial" ))
+		(text "pixelMemory[104..0]" (rect 21 59 102 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "quadrant[1..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "quadrant[1..0]" (rect 21 75 74 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
 		(pt 240 32)
@@ -80,8 +87,18 @@ applicable agreement for further details.
 		(line (pt 240 96)(pt 224 96)(line_width 3))
 	)
 	(parameter
-		"inL"
-		"9"
+		"setL"
+		"3"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"blocks"
+		"35"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"pixmemL"
+		"104"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing

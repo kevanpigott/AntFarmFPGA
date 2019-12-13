@@ -1,3 +1,4 @@
+//Author: Kevan Pigott
 module row2bus(inA,inB,inC,inD,inE,inF,inG,inH,inI,inJ,inK,inL,inM,out);
 input [4:0]inA;
 input [4:0]inB;
@@ -50,28 +51,3 @@ end
 
 endmodule
 
-module dispToBlock(in,out);
-parameter empty=3'd0, air=3'd1, dirt=3'd2, ground=3'd3, queen=3'd4, wall=3'd5, errorblock=3'd6, tunnel=3'd7;
-
-	input [4:0]in;
-	output reg [2:0]out;
-	reg [2:0]store;
-	always@(*)begin
-		if(in[3]==1'b1)begin//ant
-			store<=3'd0;
-		end else if(in[4]==1'b1) begin//sugar
-			store<=3'd1;
-		end else if(in[2:0]==ground) begin
-			store<=3'd2;
-		end else if((in[2:0]==queen)) begin
-			store<=3'd3;
-		end else if((in[2:0]==dirt)|(in[2:0]==tunnel)|(in[2:0]==wall)) begin
-			store<=3'd4;
-		end else begin
-			store<=3'd7;
-		end
-		out<=store;
-	end
-
-
-endmodule

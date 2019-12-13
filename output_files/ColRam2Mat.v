@@ -1,3 +1,4 @@
+//Author: Kevan Pigott
 module ColRam2Mat(Sel,inA,inB,inC,inD,inE,inF,inG,inH,inI,inJ,inK,inL,inM,outCol,outSel);
 
 

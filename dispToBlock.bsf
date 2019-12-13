@@ -43,37 +43,37 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"air"
+		"tunnel"
 		"001"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"dirt"
+		"ground"
 		"010"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"ground"
+		"air"
 		"011"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"queen"
+		"dirt"
 		"100"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"wall"
+		"queen"
 		"101"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"errorblock"
+		"wall"
 		"110"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
-		"tunnel"
+		"errorblock"
 		"111"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)

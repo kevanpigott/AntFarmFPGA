@@ -1,5 +1,5 @@
 Analysis & Synthesis report for vga
-Thu Dec 05 14:25:43 2019
+Sun Dec 08 13:49:36 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -45,13 +45,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 05 14:25:43 2019           ;
+; Analysis & Synthesis Status        ; Successful - Sun Dec 08 13:49:36 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; vga                                             ;
 ; Top-level Entity Name              ; vga                                             ;
 ; Family                             ; Cyclone IV GX                                   ;
-; Total logic elements               ; 638                                             ;
-;     Total combinational functions  ; 638                                             ;
+; Total logic elements               ; 636                                             ;
+;     Total combinational functions  ; 636                                             ;
 ;     Dedicated logic registers      ; 29                                              ;
 ; Total registers                    ; 29                                              ;
 ; Total pins                         ; 25                                              ;
@@ -180,9 +180,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------+-------------------+
 ; I/O pins                 ; 25                ;
 ; DSP block 9-bit elements ; 0                 ;
-; Maximum fan-out node     ; sqSwitch[3]~input ;
-; Maximum fan-out          ; 80                ;
-; Total fan-out            ; 2465              ;
+; Maximum fan-out node     ; sqSwitch[2]~input ;
+; Maximum fan-out          ; 76                ;
+; Total fan-out            ; 2457              ;
 ; Average fan-out          ; 3.44              ;
 +--------------------------+-------------------+
 
@@ -192,8 +192,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name     ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------+--------------+
-; |vga                       ; 638 (581)         ; 29 (9)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 25   ; 0            ; |vga                    ; work         ;
-;    |vga640x480:display|    ; 57 (57)           ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |vga|vga640x480:display ; work         ;
+; |vga                       ; 636 (578)         ; 29 (9)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 25   ; 0            ; |vga                    ; work         ;
+;    |vga640x480:display|    ; 58 (58)           ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |vga|vga640x480:display ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -260,9 +260,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Dec 05 14:25:39 2019
+    Info: Processing started: Sun Dec 08 13:49:32 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off vga -c vga
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file kevansvgatry3million.v
+    Info (12023): Found entity 1: kevansVGAtry3million
 Warning (12125): Using design file vga.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: vga
 Info (12127): Elaborating entity "vga" for the top level hierarchy
@@ -288,13 +290,13 @@ Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/altera/13.0sp1/quartus/projects/antfarm/vga.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 663 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 661 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 638 logic cells
+    Info (21061): Implemented 636 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 18 warnings
     Info: Peak virtual memory: 4652 megabytes
-    Info: Processing ended: Thu Dec 05 14:25:43 2019
+    Info: Processing ended: Sun Dec 08 13:49:36 2019
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 

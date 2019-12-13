@@ -1,3 +1,4 @@
+//Author: Kevan Pigott
 module probe(select,inCdisp,inBdisp,inAdisp,inDdisp,inAstate,inBstate,inAoutNorth,inBoutSouth,outThousands,outHundreds,outTens,outOnes,clk);
 input	[7:0]inAstate;
 input	[7:0]inBstate;

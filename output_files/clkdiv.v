@@ -1,3 +1,4 @@
+//Author: Kevan Pigott
 module clkdiv(clk,out);
 input clk;
 output reg out;
@@ -10,7 +11,7 @@ end
 
 always@(posedge clk) begin
 	out<=store;
-	if((count%500000)==0) begin
+	if((count%500000)==0) begin //count%500000
 		store<=!store;
 		count=count+1;
 	end else begin

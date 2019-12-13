@@ -1,3 +1,4 @@
+//Author:Kevan Pigott
 module testController(leftIn,leftOut,Inputs,RW,out);
 input [2:0]leftIn;
 output reg [2:0]leftOut;

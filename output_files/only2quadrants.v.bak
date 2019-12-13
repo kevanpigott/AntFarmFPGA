@@ -1,0 +1,7 @@
+module only2quadrants(in,out);
+input[1:0]in;
+wire [1:0] idk;
+idk[1]=in[1];
+idk[0]=1'b0;
+output [1:0]out =idk;
+endmodule

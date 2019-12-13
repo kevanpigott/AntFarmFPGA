@@ -1,5 +1,7 @@
-Warning (10268): Verilog HDL information at MovePopRegister.v(18): always construct contains both blocking and non-blocking assignments
-Warning (10268): Verilog HDL information at blockV2.v(193): always construct contains both blocking and non-blocking assignments
-Warning (10268): Verilog HDL information at blockV2.v(232): always construct contains both blocking and non-blocking assignments
-Warning (10268): Verilog HDL information at clkdiv.v(11): always construct contains both blocking and non-blocking assignments
-Warning (10268): Verilog HDL information at kevansVGA.v(39): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at MovePopRegister.v(19): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at blockV2.v(198): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at blockV2.v(237): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at clkdiv.v(12): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at kevansVGA.v(42): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at VGAlong.v(38): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at clk_div_by_four.v(9): always construct contains both blocking and non-blocking assignments

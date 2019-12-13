@@ -1,3 +1,4 @@
+//Author:Kevan Pigott
 module iterativeSelector(clk,selectOut);
 input clk;
 reg [5:0]count;

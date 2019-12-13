@@ -1,3 +1,4 @@
+//Author:Kevan Pigott
 module display(in,out);
 input [4:0]in;
 output reg [6:0]out;

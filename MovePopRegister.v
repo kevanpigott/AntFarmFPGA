@@ -1,3 +1,4 @@
+//Author:Kevan Pigott
 module MovePopRegister(LeftIn,LeftOut,RightIn,RightOut,Push,Pop);
 input Push;
 input Pop;

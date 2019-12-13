@@ -1,3 +1,4 @@
+//Author:Kevan Pigott
 module block(previousMoves,command,North,South,East,West);
 parameter E = 4'b00, 
 			 G = 4'b01,

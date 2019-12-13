@@ -1,3 +1,4 @@
+//Author:Brian Egolf
 module vga(
     input wire CLK,             // board clock: 100 MHz on Arty/Basys3/Nexys
     input wire RST_BTN,         // reset button

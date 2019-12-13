@@ -20,7 +20,7 @@ module vga2(
 	//reg cur;
 //	reg [3:0]storeR;
 //	reg [3:0]tempR;
-//	reg [3:0]fuckyou;
+//	reg [3:0]Fooyou;
 //	integer i=0;
 //	always@(posedge CLK) begin
 //		VGA_R<=storeR;
@@ -36,13 +36,13 @@ module vga2(
 		
 		//tempR[3]<=((x > 200) & (y > 430) & (x < 250) & (y < 480));
 		//tempR[3]<=(tempR[3]&((x > 100) & (y > 280) & (x < 150) & (y < 330)));
-		//fuckyou[0]<=((x > 200) & (y > 430) & (x < 250) & (y < 480));
-		//fuckyou[1]<=((x > 100) & (y > 280) & (x < 150) & (y < 330));
+		//Fooyou[0]<=((x > 200) & (y > 430) & (x < 250) & (y < 480));
+		//Fooyou[1]<=((x > 100) & (y > 280) & (x < 150) & (y < 330));
 		
-		//fuckyou[i+1]<=(fuckyou[i]+((x > 100) & (y > 280) & (x < 150) & (y < 330)));
+		//Fooyou[i+1]<=(Fooyou[i]+((x > 100) & (y > 280) & (x < 150) & (y < 330)));
 		//i=i+1;
-		//fuckyou[3]<=((x > 100) & (y > 280) & (x < 150) & (y < 330));
-		//fuckyou[3]<=(fuckyou[3]+((x > 200) & (y > 430) & (x < 250) & (y < 480)));
+		//Fooyou[3]<=((x > 100) & (y > 280) & (x < 150) & (y < 330));
+		//Fooyou[3]<=(Fooyou[3]+((x > 200) & (y > 430) & (x < 250) & (y < 480)));
 		//prev=((x > (WIDTH*i)) & (y > 430) & (x < (WIDTH*(i+1))) & (y < 480));
 		//cur=(prev+((x > 100) & (y > 280) & (x < 150) & (y < 330)));
 		//prev=cur;

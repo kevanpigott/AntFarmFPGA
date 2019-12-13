@@ -1,3 +1,4 @@
+//Author: Kevan Pigott
 module disp2VGAencoder(disp,outCol);
 
 

@@ -1,3 +1,4 @@
+//Author:Kevan Pigott
 module ThreeBitPopRegisterNode(left,right, down, push, pop);
 
 input pop;

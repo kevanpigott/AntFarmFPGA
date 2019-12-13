@@ -1,0 +1,8 @@
+module quadrantDraw (outA,outB,outC,outD);
+
+output [20:0]outA=21'o0000000;
+output [20:0]outB=21'o0000000;
+output [20:0]outC=21'o0000000;
+output [20:0]outD=21'o0000000;
+
+endmodule

@@ -1,3 +1,4 @@
+//Author: Kevan Pigott
 module ColumnRAM(inSelW,inColW,outRead,inW);
 input inW;
 input [3:0]inSelW;

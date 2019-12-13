@@ -1,3 +1,4 @@
+//Author: Kevan Pigott
 module PopRegisterTest(PushIn,PopOut,Push,Pop,ReadOut,write, clk);
 input Push;
 input Pop;

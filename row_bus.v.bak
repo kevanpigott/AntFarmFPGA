@@ -1,0 +1,16 @@
+module row_bus(inA ,inB ,inC ,inD ,inE ,inF ,inG ,inG ,inH ,inJ ,inK ,inL ,inM,out); 
+	input [2:0]inA;
+	input [2:0]inB;
+	input [2:0]inC;
+	input [2:0]inD;
+	input [2:0]inE;
+	input [2:0]inF;
+	input [2:0]inG;
+	input [2:0]inH;
+	input [2:0]inI;
+	input [2:0]inJ;
+	input [2:0]inK;
+	input [2:0]inL;
+	input [2:0]inM;
+endmodule;
+//14 blocks 5bits each

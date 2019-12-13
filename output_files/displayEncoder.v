@@ -1,3 +1,4 @@
+//Author: Kevan Pigott
 module displayEncoder(in,outTen,outOne,outHundred);
 parameter L=7;
 input [L:0] in;
